@@ -17,15 +17,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
        
         let window = UIWindow(frame: UIScreen.main.bounds)
-        let viewController = ResultsVC(summary: "These are the results", answers: [
-            PresentableAnswer(question: "Question 1 Question 1 Question 1 Question 1 Question 1 Question 1", answer: "Test1 Test1 Test1 Test1 vTest1 Test1 Test1 Test1 Test1 Test1 vTest1 Test1", wrongAnswer: "wrong"),
-            PresentableAnswer(question: "Question 2 Question 2 Question 2 Question 2 Question 2", answer: "Test2 Test2 Test2 Test2", wrongAnswer: nil)
-        ])
+//        let viewController = ResultsVC(summary: "These are the results", answers: [
+//            PresentableAnswer(question: "Question 1 Question 1 Question 1 Question 1 Question 1 Question 1", answer: "Test1 Test1 Test1 Test1 vTest1 Test1 Test1 Test1 Test1 Test1 vTest1 Test1", wrongAnswer: "wrong"),
+//            PresentableAnswer(question: "Question 2 Question 2 Question 2 Question 2 Question 2", answer: "Test2 Test2 Test2 Test2", wrongAnswer: nil)
+//        ])
         
         
-//        let viewController = QuestionVC(question: "A test question", options: ["option 1", "option2"]) {
-//            print($0)
-//        }
+        let viewController = QuestionVC(question: "A test question", options: ["option 1", "option2"]) {
+            print($0)
+        }
        
         _ = viewController.view
         viewController.tableView.allowsMultipleSelection = true
