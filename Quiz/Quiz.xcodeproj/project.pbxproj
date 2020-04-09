@@ -21,6 +21,8 @@
 		CA4E39252434E19200358485 /* QuizEngine.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CA4E39232434E19200358485 /* QuizEngine.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CA4E39282436154C00358485 /* NavigationControllerRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4E39272436154C00358485 /* NavigationControllerRouterTests.swift */; };
 		CA4E392A2436248F00358485 /* NavigationControllerRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4E39292436248F00358485 /* NavigationControllerRouter.swift */; };
+		CA4E3A3D243F91DA00358485 /* QuestionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4E3A3C243F91DA00358485 /* QuestionTests.swift */; };
+		CA4E3A3F243F959900358485 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4E3A3E243F959900358485 /* Question.swift */; };
 		CAC861ED23B8106000AE2EDA /* CorrectAnswerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC861EC23B8106000AE2EDA /* CorrectAnswerCell.swift */; };
 		CAC861EF23B8113B00AE2EDA /* WrongAnswerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC861EE23B8113B00AE2EDA /* WrongAnswerCell.swift */; };
 		CAC861F123B811B700AE2EDA /* PresentableAnswerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC861F023B811B700AE2EDA /* PresentableAnswerModel.swift */; };
@@ -77,6 +79,8 @@
 		CA4E39232434E19200358485 /* QuizEngine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = QuizEngine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA4E39272436154C00358485 /* NavigationControllerRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationControllerRouterTests.swift; sourceTree = "<group>"; };
 		CA4E39292436248F00358485 /* NavigationControllerRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationControllerRouter.swift; sourceTree = "<group>"; };
+		CA4E3A3C243F91DA00358485 /* QuestionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionTests.swift; sourceTree = "<group>"; };
+		CA4E3A3E243F959900358485 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		CAC861EC23B8106000AE2EDA /* CorrectAnswerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CorrectAnswerCell.swift; sourceTree = "<group>"; };
 		CAC861EE23B8113B00AE2EDA /* WrongAnswerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrongAnswerCell.swift; sourceTree = "<group>"; };
 		CAC861F023B811B700AE2EDA /* PresentableAnswerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentableAnswerModel.swift; sourceTree = "<group>"; };
@@ -135,6 +139,7 @@
 				7DDDD4A52362D71300387806 /* Assets.xcassets */,
 				7DDDD4A72362D71300387806 /* LaunchScreen.storyboard */,
 				7DDDD4AA2362D71300387806 /* Info.plist */,
+				CA4E3A3E243F959900358485 /* Question.swift */,
 			);
 			path = Quiz;
 			sourceTree = "<group>";
@@ -147,6 +152,7 @@
 				7D4E8CA6236BF10D00CBFD97 /* TableViewHelpes.swift */,
 				7D4E8CA0236BE20500CBFD97 /* ResultsViewControllerTest.swift */,
 				CA4E39272436154C00358485 /* NavigationControllerRouterTests.swift */,
+				CA4E3A3C243F91DA00358485 /* QuestionTests.swift */,
 			);
 			path = QuizTests;
 			sourceTree = "<group>";
@@ -346,6 +352,7 @@
 				CA4E392A2436248F00358485 /* NavigationControllerRouter.swift in Sources */,
 				CAC861EF23B8113B00AE2EDA /* WrongAnswerCell.swift in Sources */,
 				CAC861ED23B8106000AE2EDA /* CorrectAnswerCell.swift in Sources */,
+				CA4E3A3F243F959900358485 /* Question.swift in Sources */,
 				CAC861F323B8122300AE2EDA /* UITableView+Extension.swift in Sources */,
 				CAC861FF23B820FB00AE2EDA /* QuestionVC.swift in Sources */,
 				CAC861F123B811B700AE2EDA /* PresentableAnswerModel.swift in Sources */,
@@ -358,6 +365,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA4E3A3D243F91DA00358485 /* QuestionTests.swift in Sources */,
 				CA4E39282436154C00358485 /* NavigationControllerRouterTests.swift in Sources */,
 				7DDDD4BF2362D90C00387806 /* QuestionVCTest.swift in Sources */,
 				7D4E8CA7236BF10D00CBFD97 /* TableViewHelpes.swift in Sources */,
