@@ -10,13 +10,6 @@ import UIKit
 import QuizEngine
 
 
-protocol ViewControllerFactory {
-    func questionViewController(for question: Question<String>, answerCallback: @escaping (String) -> Void) -> UIViewController
-    
-    func resultsViewController(for results: Results<Question<String>, String>) -> UIViewController
-}
-
-
 class NavigationControllerRouter: Router {
     private let navigationController: UINavigationController
     private let factory: ViewControllerFactory
