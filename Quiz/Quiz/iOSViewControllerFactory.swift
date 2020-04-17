@@ -20,13 +20,7 @@ class iOSViewControllerFactory: ViewControllerFactory {
         guard let options = options[question] else {
             fatalError("Couldn't load options for question: \(question)")
         }
-        
-        switch question {
-        case .singleSelection(let value):
-            return QuestionVC(question: value, options: options, selection: {_ in })
-        default:
-            return UIViewController()
-        }
+        return questionViewController(for: question, options: options, answerCallback: answerCallback)
     }
     
     func resultsViewController(for results: Results<Question<String>, String>) -> UIViewController {
@@ -34,4 +28,15 @@ class iOSViewControllerFactory: ViewControllerFactory {
     }
     
     
+    private func questionViewController(for question: Question<String>, options: [String], answerCallback: @escaping (String) -> Void) -> UIViewController {
+        switch question {
+        case .singleSelection(let value):
+            return QuestionVC(question: value, options: options, selection: {_ in })
+        case .multipleSelection(let value):
+            let controller = QuestionVC(question: value, options: options, selection: {_ in })
+            _ = controller.view
+            controller.tableView.allowsMultipleSelection = true
+            return controller
+        }
+    }
 }
