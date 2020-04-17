@@ -17,9 +17,13 @@ class iOSViewControllerFactory: ViewControllerFactory {
     }
     
     func questionViewController(for question: Question<String>, answerCallback: @escaping (String) -> Void) -> UIViewController {
+        guard let options = options[question] else {
+            fatalError("Couldn't load options for question: \(question)")
+        }
+        
         switch question {
         case .singleSelection(let value):
-            return QuestionVC(question: value, options: options[question]!, selection: {_ in })
+            return QuestionVC(question: value, options: options, selection: {_ in })
         default:
             return UIViewController()
         }
