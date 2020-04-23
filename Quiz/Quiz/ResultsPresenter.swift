@@ -22,12 +22,13 @@ struct ResultsPresenter {
             guard let correctAnswer = correctAnswer[question] else {
                 fatalError("Couldn't load answer for question: \(question)")
             }
+            let wrongAnswer = correctAnswer == userAnswer ? nil : userAnswer.joined(separator: ", ")
             
             switch question {
             case .singleSelection(let value), .multipleSelection(let value):
                 return PresentableAnswer(question: value,
                                          answer: correctAnswer.joined(separator: ", "),
-                                         wrongAnswer: userAnswer.joined(separator: ", "))
+                                         wrongAnswer: wrongAnswer)
             }
         }
     }
