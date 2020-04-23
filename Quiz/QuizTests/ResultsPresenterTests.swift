@@ -35,6 +35,7 @@ class ResultsPresenterTests: XCTestCase {
         XCTAssertEqual(sut.presentableAnswer.count, 1)
         XCTAssertEqual(sut.presentableAnswer.first!.question, "Q1")
         XCTAssertEqual(sut.presentableAnswer.first!.answer, "A2")
+        XCTAssertEqual(sut.presentableAnswer.first!.wrongAnswer, "A1")
     }
     
 }

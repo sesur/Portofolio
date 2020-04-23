@@ -25,7 +25,7 @@ struct ResultsPresenter {
             
             switch question {
             case .singleSelection(let value), .multipleSelection(let value):
-                return PresentableAnswer(question: value, answer: correctAnswer.first!, wrongAnswer: "")
+                return PresentableAnswer(question: value, answer: correctAnswer.first!, wrongAnswer: userAnswer.first!)
             }
         }
     }
