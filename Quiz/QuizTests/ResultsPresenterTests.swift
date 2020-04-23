@@ -19,10 +19,11 @@ class ResultsPresenterTests: XCTestCase {
         XCTAssertEqual(sut.summary, "You got 1/2 correct")
     }
     
-    func test_summary_withTwoQuestionsScoresTwo_returnsSummary() {
-        let answer = [Question.singleSelection("Q1"): ["A1"], Question.singleSelection("Q2"): ["A2"]]
-        let result = Results.make(answers: answer, score: 2)
+    func test_presentableAnswer_withoutQuestion_isEmpty() {
+        let answer = [Question<String>: [String]]()
+        let result = Results.make(answers: answer, score: 1)
         let sut = ResultsPresenter(results: result)
-        XCTAssertEqual(sut.summary, "You got 2/2 correct")
+        XCTAssertTrue(sut.presentableAnswer.isEmpty)
     }
+  
 }

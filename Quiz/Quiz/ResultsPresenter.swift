@@ -15,4 +15,8 @@ struct ResultsPresenter {
     var summary: String {
         return "You got \(results.score)/\(results.answers.count) correct"
     }
+    
+    var presentableAnswer: [PresentableAnswer] {
+        return []
+    }
 }
