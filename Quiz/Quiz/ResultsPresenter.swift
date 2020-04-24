@@ -22,14 +22,26 @@ struct ResultsPresenter {
             guard let correctAnswer = correctAnswer[question] else {
                 fatalError("Couldn't load answer for question: \(question)")
             }
-            let wrongAnswer = correctAnswer == userAnswer ? nil : userAnswer.joined(separator: ", ")
-            
-            switch question {
-            case .singleSelection(let value), .multipleSelection(let value):
-                return PresentableAnswer(question: value,
-                                         answer: correctAnswer.joined(separator: ", "),
-                                         wrongAnswer: wrongAnswer)
-            }
+            return presentableAnswer(question, userAnswer, correctAnswer)
         }
+    }
+    
+    private func presentableAnswer(_ question: Question<String>, _ userAnswer: [String], _ correctAnswer: [String]) -> PresentableAnswer {
+        
+        switch question {
+        case .singleSelection(let value), .multipleSelection(let value):
+            return PresentableAnswer(question: value,
+                                     answer: formattedRightAnswer(correctAnswer),
+                                     wrongAnswer: formattedWrongAnswer(userAnswer, correctAnswer))
+        }
+    }
+    
+    private func formattedRightAnswer(_ answer: [String]) -> String {
+        return answer.joined(separator: ", ")
+    }
+    
+    private func formattedWrongAnswer(_ userAnswer: [String],
+                                      _ correctAnswer: [String]) -> String? {
+        return correctAnswer == userAnswer ? nil : formattedRightAnswer(userAnswer)
     }
 }
