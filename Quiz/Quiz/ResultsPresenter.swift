@@ -10,6 +10,7 @@ import Foundation
 import QuizEngine
 
 struct ResultsPresenter {
+    let questions: [Question<String>]
     let results: Results<Question<String>, [String]>
     let correctAnswer: [Question<String>: [String]]
     
@@ -18,8 +19,8 @@ struct ResultsPresenter {
     }
     
     var presentableAnswer: [PresentableAnswer] {
-        return results.answers.map { (question, userAnswer) in
-            guard let correctAnswer = correctAnswer[question] else {
+        return questions.map { question in
+            guard let userAnswer = results.answers[question], let correctAnswer = correctAnswer[question] else {
                 fatalError("Couldn't load answer for question: \(question)")
             }
             return presentableAnswer(question, userAnswer, correctAnswer)
