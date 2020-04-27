@@ -11,9 +11,11 @@ import QuizEngine
 
 class iOSViewControllerFactory: ViewControllerFactory {
     private let options: [Question<String> : [String]]
+    private let questions: [Question<String>]
     
-    init(options: [Question<String> : [String]]) {
+    init(question: [Question<String>], options: [Question<String> : [String]]) {
         self.options = options
+        self.questions = question
     }
     
     func questionViewController(for question: Question<String>, answerCallback: @escaping (String) -> Void) -> UIViewController {
@@ -31,12 +33,20 @@ class iOSViewControllerFactory: ViewControllerFactory {
     private func questionViewController(for question: Question<String>, options: [String], answerCallback: @escaping (String) -> Void) -> UIViewController {
         switch question {
         case .singleSelection(let value):
-            return QuestionVC(question: value, options: options, selection: {_ in })
+            return questionViewController(for: question, value: value, options: options, answerCallback: answerCallback)
+            
         case .multipleSelection(let value):
-            let controller = QuestionVC(question: value, options: options, selection: {_ in })
+            let controller = questionViewController(for: question, value: value, options: options, answerCallback: answerCallback)
             _ = controller.view
             controller.tableView.allowsMultipleSelection = true
             return controller
         }
+    }
+    
+    private func questionViewController(for question: Question<String>, value: String, options: [String], answerCallback: @escaping (String) -> Void) -> QuestionVC {
+        let presenter = QuestionPresenter(questions: questions, question: question)
+        let viewController = QuestionVC(question: value, options: options, selection: {_ in })
+        viewController.title = presenter.title
+        return viewController
     }
 }

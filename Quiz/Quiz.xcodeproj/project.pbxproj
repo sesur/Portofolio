@@ -35,6 +35,9 @@
 		CAC861F323B8122300AE2EDA /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC861F223B8122300AE2EDA /* UITableView+Extension.swift */; };
 		CAC861FE23B820FB00AE2EDA /* QuestionVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAC861FC23B820FB00AE2EDA /* QuestionVC.xib */; };
 		CAC861FF23B820FB00AE2EDA /* QuestionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC861FD23B820FB00AE2EDA /* QuestionVC.swift */; };
+		CAEA4EB3245799A80036D52E /* QuestionPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEA4EB2245799A80036D52E /* QuestionPresenterTests.swift */; };
+		CAEA4EB524579C2F0036D52E /* QuestionPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEA4EB424579C2F0036D52E /* QuestionPresenterTests.swift */; };
+		CAEA4EB724579C3C0036D52E /* QuestionPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEA4EB624579C3C0036D52E /* QuestionPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +102,9 @@
 		CAC861F223B8122300AE2EDA /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
 		CAC861FC23B820FB00AE2EDA /* QuestionVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = QuestionVC.xib; path = Quiz/QuestionVC.xib; sourceTree = "<group>"; };
 		CAC861FD23B820FB00AE2EDA /* QuestionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QuestionVC.swift; path = Quiz/QuestionVC.swift; sourceTree = "<group>"; };
+		CAEA4EB2245799A80036D52E /* QuestionPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionPresenterTests.swift; sourceTree = "<group>"; };
+		CAEA4EB424579C2F0036D52E /* QuestionPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionPresenterTests.swift; sourceTree = "<group>"; };
+		CAEA4EB624579C3C0036D52E /* QuestionPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +161,8 @@
 				CA4E3A3E243F959900358485 /* Question.swift */,
 				CAB32A6F244771ED00B96B52 /* iOSViewControllerFactory.swift */,
 				CAB540532452491500CF7F7A /* ResultsPresenter.swift */,
+				CAEA4EB2245799A80036D52E /* QuestionPresenterTests.swift */,
+				CAEA4EB624579C3C0036D52E /* QuestionPresenter.swift */,
 			);
 			path = Quiz;
 			sourceTree = "<group>";
@@ -171,6 +179,7 @@
 				CA4E3A3C243F91DA00358485 /* QuestionTests.swift */,
 				CAB32A6D244771A200B96B52 /* iOSViewControllerFactoryTests.swift */,
 				CAB54051245248D600CF7F7A /* ResultsPresenterTests.swift */,
+				CAEA4EB424579C2F0036D52E /* QuestionPresenterTests.swift */,
 			);
 			path = QuizTests;
 			sourceTree = "<group>";
@@ -371,9 +380,11 @@
 				CAB32A6C2447716000B96B52 /* ViewControllerFactory.swift in Sources */,
 				CAC861EF23B8113B00AE2EDA /* WrongAnswerCell.swift in Sources */,
 				CAB540542452491500CF7F7A /* ResultsPresenter.swift in Sources */,
+				CAEA4EB3245799A80036D52E /* QuestionPresenterTests.swift in Sources */,
 				CAB32A70244771ED00B96B52 /* iOSViewControllerFactory.swift in Sources */,
 				CAC861ED23B8106000AE2EDA /* CorrectAnswerCell.swift in Sources */,
 				CA4E3A3F243F959900358485 /* Question.swift in Sources */,
+				CAEA4EB724579C3C0036D52E /* QuestionPresenter.swift in Sources */,
 				CAC861F323B8122300AE2EDA /* UITableView+Extension.swift in Sources */,
 				CAC861FF23B820FB00AE2EDA /* QuestionVC.swift in Sources */,
 				CAC861F123B811B700AE2EDA /* PresentableAnswerModel.swift in Sources */,
@@ -390,6 +401,7 @@
 				CA4E39282436154C00358485 /* NavigationControllerRouterTests.swift in Sources */,
 				7DDDD4BF2362D90C00387806 /* QuestionVCTest.swift in Sources */,
 				CAB54052245248D600CF7F7A /* ResultsPresenterTests.swift in Sources */,
+				CAEA4EB524579C2F0036D52E /* QuestionPresenterTests.swift in Sources */,
 				CAB32A6E244771A200B96B52 /* iOSViewControllerFactoryTests.swift in Sources */,
 				7D4E8CA7236BF10D00CBFD97 /* TableViewHelpes.swift in Sources */,
 				7D4E8CA1236BE20500CBFD97 /* ResultsViewControllerTest.swift in Sources */,
