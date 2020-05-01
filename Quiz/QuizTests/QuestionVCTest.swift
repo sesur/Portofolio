@@ -32,7 +32,7 @@ class QuestionVCtest: XCTestCase {
     
     func test_optionSelected_withSingleSelection_notifiesDelegates() {
         var selectedAnser = [String]()
-        let sut = makeSUT(options: ["A1", "A2"]) {
+        let sut = makeSUT(options: ["A1", "A2"], allowsMultipleSelection: false) {
             selectedAnser = $0
         }
         
@@ -45,7 +45,7 @@ class QuestionVCtest: XCTestCase {
     
     func test_optionDeselected_withSingleSelection_doesNotNotifieWthEmptySelection() {
         var callbackCount = 0
-        let sut = makeSUT(options: ["A1", "A2"]) { _ in callbackCount += 1 }
+        let sut = makeSUT(options: ["A1", "A2"], allowsMultipleSelection: false) { _ in callbackCount += 1 }
         
         
         sut.tableView.select(row: 0)
@@ -57,10 +57,9 @@ class QuestionVCtest: XCTestCase {
     
     func test_optionSelected_withMultipleSelection_notifiesDelegated() {
         var selectedAnser = [String]()
-        let sut = makeSUT(options: ["A1", "A2"]) {
+        let sut = makeSUT(options: ["A1", "A2"], allowsMultipleSelection: true) {
             selectedAnser = $0
         }
-        sut.tableView.allowsMultipleSelection = true
         
         sut.tableView.select(row: 0)
         XCTAssertEqual(selectedAnser, ["A1"])
@@ -71,10 +70,9 @@ class QuestionVCtest: XCTestCase {
     
     func test_optionDeselected_withMultipleSelection_notifiesDelegated() {
         var selectedAnser = [String]()
-        let sut = makeSUT(options: ["A1", "A2"]) {
+        let sut = makeSUT(options: ["A1", "A2"], allowsMultipleSelection: true) {
             selectedAnser = $0
         }
-        sut.tableView.allowsMultipleSelection = true
         
         sut.tableView.select(row: 0)
         XCTAssertEqual(selectedAnser, ["A1"])
@@ -86,12 +84,12 @@ class QuestionVCtest: XCTestCase {
     
     
     
-    
     //MARK:- Helpers
     private func makeSUT(question: String = "",
                          options: [String] = [],
+                         allowsMultipleSelection: Bool = false,
                          selection: @escaping ([String]) -> Void = {_ in} ) -> QuestionVC {
-        let sut = QuestionVC(question: question, options: options, selection: selection)
+        let sut = QuestionVC(question: question, options: options, allowsMultipleSelection: allowsMultipleSelection, selection: selection)
         _ = sut.view
         return sut
     }
@@ -100,33 +98,3 @@ class QuestionVCtest: XCTestCase {
 
 
 
-//
-//class QuestionVCtest: XCTestCase {
-//    func test_viewDidLoad_withHeaderText() {
-//        let sut = QuestionVC(question:"Q1", options:[])
-//        _ = sut.view
-//        XCTAssertEqual(sut.headerLabel.text, "Q1")
-//    }
-//
-//    func test_viewDidLoad_WithNoOption_rendersZeroOptios() {
-//        let sut = QuestionVC(question:"Q1", options: [])
-//        _ = sut.view
-//        XCTAssertEqual(sut.tableView.numberOfRows(inSection: 0 ), 0)
-//    }
-//
-//    func test_viewDidLoad_WithOneOption_rendersOneOptios() {
-//        let sut = QuestionVC(question:"Q1", options: ["A1"])
-//        _ = sut.view
-//        XCTAssertEqual(sut.tableView.numberOfRows(inSection: 0 ), 1)
-//    }
-//
-//    func test_viewDidLoad_WithOneOption_rendersOneOptiosText() {
-//        let sut = QuestionVC(question:"Q1", options: ["A1"])
-//        _ = sut.view
-//
-//        let indexPath = IndexPath(row: 0, section: 0)
-//        let cell = sut.tableView.dataSource?.tableView(sut.tableView, cellForRowAt: indexPath)
-//
-//        XCTAssertEqual(cell?.textLabel?.text, "A1")
-//    }
-//}

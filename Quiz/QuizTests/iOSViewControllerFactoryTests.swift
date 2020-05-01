@@ -20,17 +20,15 @@ class iOSViewControllerFactoryTests: XCTestCase {
         XCTAssertEqual(makeQuestionViewController(question: singleAnswerQuestion).title, presenter.title)
     }
     func test_questionViewController_singleSelection_createsQuestionControllerWithQuestion() {
-        XCTAssertEqual(makeQuestionViewController(question: Question.singleSelection("Q1")).question, "Q1")
+        XCTAssertEqual(makeQuestionViewController(question: singleAnswerQuestion).question, "Q1")
     }
     
     func test_questionViewController_singleSelection_createsQuestionControllerWithOptions() {
-        XCTAssertEqual(makeQuestionViewController(question: Question.singleSelection("Q1")).options, options)
+        XCTAssertEqual(makeQuestionViewController(question: singleAnswerQuestion).options, options)
     }
     
     func test_questionViewController_singleSelection_createsQuestionControllerWithSingleSelection() {
-        let controller = makeQuestionViewController(question: Question.singleSelection("Q1"))
-        _ = controller.view
-        XCTAssertFalse(controller.tableView.allowsMultipleSelection)
+        XCTAssertFalse(makeQuestionViewController(question: singleAnswerQuestion).allowsMultipleSelection)
     }
     
     func test_questionViewController_multipleSelection_createsQuestionControllerWithTitle() {
@@ -39,17 +37,15 @@ class iOSViewControllerFactoryTests: XCTestCase {
     }
     
     func test_questionViewController_multipleSelection_createsQuestionControllerWithQuestion() {
-           XCTAssertEqual(makeQuestionViewController(question: Question.multipleSelection("Q1")).question, "Q1")
+           XCTAssertEqual(makeQuestionViewController(question: multipleAnswerQuestion).question, "Q1")
        }
     
     func test_questionViewController_multipleSelection_createsQuestionControllerWithOptions() {
-        XCTAssertEqual(makeQuestionViewController(question: Question.multipleSelection("Q1")).options, options)
+        XCTAssertEqual(makeQuestionViewController(question: multipleAnswerQuestion).options, options)
     }
     
     func test_questionViewController_multipleSelection_createsQuestionControllerWithMulltipleSelection() {
-        let controller = makeQuestionViewController(question: Question.multipleSelection("Q1"))
-        _ = controller.view
-        XCTAssertTrue(controller.tableView.allowsMultipleSelection)
+        XCTAssertTrue(makeQuestionViewController(question: multipleAnswerQuestion).allowsMultipleSelection)
     }
     
     //MARK:- Helpers
