@@ -18,19 +18,19 @@ class iOSViewControllerFactory: ViewControllerFactory {
         self.questions = question
     }
     
-    func questionViewController(for question: Question<String>, answerCallback: @escaping (String) -> Void) -> UIViewController {
+    func questionViewController(for question: Question<String>, answerCallback: @escaping ([String]) -> Void) -> UIViewController {
         guard let options = options[question] else {
             fatalError("Couldn't load options for question: \(question)")
         }
         return questionViewController(for: question, options: options, answerCallback: answerCallback)
     }
     
-    func resultsViewController(for results: Results<Question<String>, String>) -> UIViewController {
+    func resultsViewController(for results: Results<Question<String>, [String]>) -> UIViewController {
         return UIViewController()
     }
     
     
-    private func questionViewController(for question: Question<String>, options: [String], answerCallback: @escaping (String) -> Void) -> UIViewController {
+    private func questionViewController(for question: Question<String>, options: [String], answerCallback: @escaping ([String]) -> Void) -> UIViewController {
         switch question {
         case .singleSelection(let value):
             return questionViewController(for: question, value: value, options: options, allowsMultipleSelection: false, answerCallback: answerCallback)
@@ -40,7 +40,7 @@ class iOSViewControllerFactory: ViewControllerFactory {
         }
     }
     
-    private func questionViewController(for question: Question<String>, value: String, options: [String],allowsMultipleSelection: Bool, answerCallback: @escaping (String) -> Void) -> QuestionVC {
+    private func questionViewController(for question: Question<String>, value: String, options: [String],allowsMultipleSelection: Bool, answerCallback: @escaping ([String]) -> Void) -> QuestionVC {
         let presenter = QuestionPresenter(questions: questions, question: question)
         let viewController = QuestionVC(question: value, options: options, allowsMultipleSelection: allowsMultipleSelection, selection: {_ in })
         viewController.title = presenter.title
