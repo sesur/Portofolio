@@ -47,6 +47,14 @@ class NavigationControllerRouterTests: XCTestCase {
         XCTAssertFalse(answerCallBackFired)
     }
     
+    func test_routeToSecondQuestion_multipleAnswer_configuresViewControllerWithSubmittButton() {
+        let viewController = UIViewController()
+        factory.stub(question: Question.multipleSelection("Q1"), with: viewController)
+        sut.routeTo(question: Question.multipleSelection("Q1"), answerCallback: { _ in})
+        factory.answerCallback[Question.multipleSelection("Q1")]!(["anything"])
+        XCTAssertNotNil(viewController.navigationItem.rightBarButtonItem!)
+    }
+    
     
     //ResultViewController
     func test_routeToResults_showsResultsViewController() {
