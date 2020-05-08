@@ -26,9 +26,9 @@ class NavigationControllerRouter: Router {
              show(factory.questionViewController(for: question, answerCallback: answerCallback))
         case .multipleSelection:
             let button = UIBarButtonItem(title: "Submit", style: .done, target: nil, action: nil)
-            button.isEnabled = false
+            let buttonViewController = SubmitButtonViewController(button, answerCallback)
             let viewController = factory.questionViewController(for: question, answerCallback: { selection in
-                button.isEnabled = selection.count > 0
+                buttonViewController.update(selection)
             })
             viewController.navigationItem.rightBarButtonItem = button
              show(viewController)
@@ -43,5 +43,35 @@ class NavigationControllerRouter: Router {
     private func show(_ viewController: UIViewController) {
         navigationController.pushViewController(viewController, animated: true)
     }
+}
+
+
+private class SubmitButtonViewController: NSObject {
+    let button: UIBarButtonItem
+    var callBack:([String]) -> Void
+    private var model = [String]()
     
+    init(_ button: UIBarButtonItem, _ callBack: @escaping ([String]) -> Void) {
+        self.button = button
+        self.callBack = callBack
+        super.init()
+        setup()
+    }
+    func update(_ model: [String]) {
+        self.model = model
+        updateButtonState()
+    }
+
+    private func setup() {
+        button.target = self
+        button.action = #selector(fireCallback)
+        updateButtonState()
+    }
+    private func updateButtonState() {
+        button.isEnabled = model.count > 0
+    }
+    
+    @objc private func fireCallback() {
+        callBack(model)
+    }
 }
