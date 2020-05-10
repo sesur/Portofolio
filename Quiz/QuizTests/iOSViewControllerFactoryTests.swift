@@ -9,6 +9,7 @@
 import UIKit
 import XCTest
 @testable import Quiz
+import QuizEngine
 
 class iOSViewControllerFactoryTests: XCTestCase {
     let options = ["A", "A2"]
@@ -46,6 +47,14 @@ class iOSViewControllerFactoryTests: XCTestCase {
     
     func test_questionViewController_multipleSelection_createsQuestionControllerWithMulltipleSelection() {
         XCTAssertTrue(makeQuestionViewController(question: multipleAnswerQuestion).allowsMultipleSelection)
+    }
+    
+    func test_resultsViewController_createsViewController() {
+        let answer = [Question<String>: [String]]()
+        let results = Results.make(answers: answer, score: 0)
+        let sut = makeSUT(options: [:])
+        let controller = sut.resultsViewController(for: results) as! ResultsVC
+        XCTAssertNotNil(controller)
     }
     
     //MARK:- Helpers

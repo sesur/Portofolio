@@ -85,7 +85,7 @@ class NavigationControllerRouterTests: XCTestCase {
         sut.routeTo(question: multipleAnswerQuestion, answerCallback: { _ in callBackWasFired = true })
         factory.answerCallback[ multipleAnswerQuestion]!(["anything"])
         
-        viewController.navigationItem.rightBarButtonItem?.simulateTap()        
+        viewController.navigationItem.rightBarButtonItem?.simulateTap()
         XCTAssertTrue(callBackWasFired)
     }
     
@@ -103,6 +103,9 @@ class NavigationControllerRouterTests: XCTestCase {
         
     }
     
+    
+    
+    //MARK:- Helpers
     class NonAnimatingNavigationController: UINavigationController {
         override func pushViewController(_ viewController: UIViewController, animated: Bool) {
             super.pushViewController(viewController, animated: false)

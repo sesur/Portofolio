@@ -26,9 +26,13 @@ class iOSViewControllerFactory: ViewControllerFactory {
     }
     
     func resultsViewController(for results: Results<Question<String>, [String]>) -> UIViewController {
-        return UIViewController()
-    }
+           return ResultsVC()
+       }
     
+    
+    
+    
+    //MARK: - Helpers
     
     private func questionViewController(for question: Question<String>, options: [String], answerCallback: @escaping ([String]) -> Void) -> UIViewController {
         switch question {
