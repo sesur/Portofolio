@@ -29,7 +29,7 @@ class iOSViewControllerFactory: ViewControllerFactory {
     
     func resultsViewController(for results: Results<Question<String>, [String]>) -> UIViewController {
         let presenter = ResultsPresenter(questions: questions, results: results, correctAnswer: correctAnswer)
-        return ResultsVC(summary: presenter.summary, answers: [])
+        return ResultsVC(summary: presenter.summary, answers: presenter.presentableAnswer)
        }
     
     
