@@ -21,8 +21,6 @@
 		CA4E39252434E19200358485 /* QuizEngine.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CA4E39232434E19200358485 /* QuizEngine.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CA4E39282436154C00358485 /* NavigationControllerRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4E39272436154C00358485 /* NavigationControllerRouterTests.swift */; };
 		CA4E392A2436248F00358485 /* NavigationControllerRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4E39292436248F00358485 /* NavigationControllerRouter.swift */; };
-		CA4E3A3D243F91DA00358485 /* QuestionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4E3A3C243F91DA00358485 /* QuestionTests.swift */; };
-		CA4E3A3F243F959900358485 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4E3A3E243F959900358485 /* Question.swift */; };
 		CAB32A6C2447716000B96B52 /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB32A6B2447716000B96B52 /* ViewControllerFactory.swift */; };
 		CAB32A6E244771A200B96B52 /* iOSViewControllerFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB32A6D244771A200B96B52 /* iOSViewControllerFactoryTests.swift */; };
 		CAB32A70244771ED00B96B52 /* iOSViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB32A6F244771ED00B96B52 /* iOSViewControllerFactory.swift */; };
@@ -88,8 +86,6 @@
 		CA4E39232434E19200358485 /* QuizEngine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = QuizEngine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA4E39272436154C00358485 /* NavigationControllerRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationControllerRouterTests.swift; sourceTree = "<group>"; };
 		CA4E39292436248F00358485 /* NavigationControllerRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationControllerRouter.swift; sourceTree = "<group>"; };
-		CA4E3A3C243F91DA00358485 /* QuestionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionTests.swift; sourceTree = "<group>"; };
-		CA4E3A3E243F959900358485 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		CAB32A6B2447716000B96B52 /* ViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactory.swift; sourceTree = "<group>"; };
 		CAB32A6D244771A200B96B52 /* iOSViewControllerFactoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSViewControllerFactoryTests.swift; sourceTree = "<group>"; };
 		CAB32A6F244771ED00B96B52 /* iOSViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSViewControllerFactory.swift; sourceTree = "<group>"; };
@@ -158,7 +154,6 @@
 				7DDDD4A52362D71300387806 /* Assets.xcassets */,
 				7DDDD4A72362D71300387806 /* LaunchScreen.storyboard */,
 				7DDDD4AA2362D71300387806 /* Info.plist */,
-				CA4E3A3E243F959900358485 /* Question.swift */,
 				CAB32A6F244771ED00B96B52 /* iOSViewControllerFactory.swift */,
 				CAB540532452491500CF7F7A /* ResultsPresenter.swift */,
 				CAEA4EB2245799A80036D52E /* QuestionPresenterTests.swift */,
@@ -176,7 +171,6 @@
 				7D4E8CA0236BE20500CBFD97 /* ResultsViewControllerTest.swift */,
 				CA4E39272436154C00358485 /* NavigationControllerRouterTests.swift */,
 				CAB5404F2452486B00CF7F7A /* ResultsHelper.swift */,
-				CA4E3A3C243F91DA00358485 /* QuestionTests.swift */,
 				CAB32A6D244771A200B96B52 /* iOSViewControllerFactoryTests.swift */,
 				CAB54051245248D600CF7F7A /* ResultsPresenterTests.swift */,
 				CAEA4EB424579C2F0036D52E /* QuestionPresenterTests.swift */,
@@ -383,7 +377,6 @@
 				CAEA4EB3245799A80036D52E /* QuestionPresenterTests.swift in Sources */,
 				CAB32A70244771ED00B96B52 /* iOSViewControllerFactory.swift in Sources */,
 				CAC861ED23B8106000AE2EDA /* CorrectAnswerCell.swift in Sources */,
-				CA4E3A3F243F959900358485 /* Question.swift in Sources */,
 				CAEA4EB724579C3C0036D52E /* QuestionPresenter.swift in Sources */,
 				CAC861F323B8122300AE2EDA /* UITableView+Extension.swift in Sources */,
 				CAC861FF23B820FB00AE2EDA /* QuestionVC.swift in Sources */,
@@ -397,7 +390,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA4E3A3D243F91DA00358485 /* QuestionTests.swift in Sources */,
 				CA4E39282436154C00358485 /* NavigationControllerRouterTests.swift in Sources */,
 				7DDDD4BF2362D90C00387806 /* QuestionVCTest.swift in Sources */,
 				CAB54052245248D600CF7F7A /* ResultsPresenterTests.swift in Sources */,
