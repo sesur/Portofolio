@@ -1,5 +1,5 @@
 //
-//  QuestionVC.swift
+//  QuestionViewController.swift
 //  Quiz
 //
 //  Created by Sergiu on 10/25/19.
@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class QuestionVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class QuestionViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet weak var headerLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
@@ -68,7 +68,7 @@ class QuestionVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
 }
 
-extension QuestionVC {
+extension QuestionViewController {
     private func dequeueCell(in tableView: UITableView) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: cellId) {
             return cell

@@ -29,7 +29,7 @@ class iOSViewControllerFactory: ViewControllerFactory {
     
     func resultsViewController(for results: Results<Question<String>, [String]>) -> UIViewController {
         let presenter = ResultsPresenter(questions: questions, results: results, correctAnswer: correctAnswer)
-        let controller = ResultsVC(summary: presenter.summary, answers: presenter.presentableAnswer)
+        let controller = ResultsViewController(summary: presenter.summary, answers: presenter.presentableAnswer)
         controller.title = presenter.title
         return controller
        }
@@ -49,9 +49,9 @@ class iOSViewControllerFactory: ViewControllerFactory {
         }
     }
     
-    private func questionViewController(for question: Question<String>, value: String, options: [String],allowsMultipleSelection: Bool, answerCallback: @escaping ([String]) -> Void) -> QuestionVC {
+    private func questionViewController(for question: Question<String>, value: String, options: [String],allowsMultipleSelection: Bool, answerCallback: @escaping ([String]) -> Void) -> QuestionViewController {
         let presenter = QuestionPresenter(questions: questions, question: question)
-        let viewController = QuestionVC(question: value, options: options, allowsMultipleSelection: allowsMultipleSelection, selection: answerCallback)
+        let viewController = QuestionViewController(question: value, options: options, allowsMultipleSelection: allowsMultipleSelection, selection: answerCallback)
         viewController.title = presenter.title
         return viewController
     }

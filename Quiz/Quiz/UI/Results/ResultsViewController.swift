@@ -1,5 +1,5 @@
 //
-//  ResultsVC.swift
+//  ResultsViewController.swift
 //  Quiz
 //
 //  Created by Sergiu on 11/1/19.
@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class ResultsVC: UIViewController, UITableViewDataSource {
+class ResultsViewController: UIViewController, UITableViewDataSource {
     
     
     @IBOutlet weak var headerLabel: UILabel!

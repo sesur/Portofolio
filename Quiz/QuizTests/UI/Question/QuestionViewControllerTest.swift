@@ -1,5 +1,5 @@
 //
-//  QuestionVCTest.swift
+//  QuestionViewControllerTest.swift
 //  QuizTests
 //
 //  Created by Sergiu on 10/25/19.
@@ -12,7 +12,7 @@ import XCTest
 
 
 
-class QuestionVCtest: XCTestCase {
+class QuestionViewControllerTest: XCTestCase {
     func test_viewDidLoad_withHeaderText() {
         XCTAssertEqual(makeSUT(question: "Q1").headerLabel.text, "Q1")
     }
@@ -88,8 +88,8 @@ class QuestionVCtest: XCTestCase {
     private func makeSUT(question: String = "",
                          options: [String] = [],
                          allowsMultipleSelection: Bool = false,
-                         selection: @escaping ([String]) -> Void = {_ in} ) -> QuestionVC {
-        let sut = QuestionVC(question: question, options: options, allowsMultipleSelection: allowsMultipleSelection, selection: selection)
+                         selection: @escaping ([String]) -> Void = {_ in} ) -> QuestionViewController {
+        let sut = QuestionViewController(question: question, options: options, allowsMultipleSelection: allowsMultipleSelection, selection: selection)
         _ = sut.view
         return sut
     }
