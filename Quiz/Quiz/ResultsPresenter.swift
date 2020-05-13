@@ -14,6 +14,10 @@ struct ResultsPresenter {
     let results: Results<Question<String>, [String]>
     let correctAnswer: [Question<String>: [String]]
     
+    var title: String {
+        return "Result" 
+    }
+    
     var summary: String {
         return "You got \(results.score)/\(results.answers.count) correct"
     }

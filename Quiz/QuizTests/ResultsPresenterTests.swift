@@ -15,6 +15,12 @@ class ResultsPresenterTests: XCTestCase {
     let singleAnswerQuestion = Question.singleSelection("Q1")
     let multipleAnswerQuestion = Question.multipleSelection("Q2")
     
+    func test_title_returnsFormattedTitle() {
+        let results: Results<Question<String>, [String]> = Results.make(answers: [:], score: 0)
+        let sut = ResultsPresenter(questions: [], results: results, correctAnswer: [:])
+        XCTAssertEqual(sut.title, "Result")
+    }
+    
     func test_summary_withTwoQuestionsScoresOne_returnsSummary() {
         let answer = [singleAnswerQuestion: ["A1"], multipleAnswerQuestion: ["A2","A3"]]
         let result = Results.make(answers: answer, score: 1)
