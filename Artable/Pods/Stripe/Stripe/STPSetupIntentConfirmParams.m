@@ -7,6 +7,7 @@
 //
 
 #import "STPSetupIntentConfirmParams.h"
+#import "STPSetupIntentConfirmParams+Utilities.h"
 
 #import "STPMandateCustomerAcceptanceParams.h"
 #import "STPMandateOnlineParams+Private.h"
@@ -59,9 +60,11 @@
 }
 
 - (STPMandateDataParams *)mandateData {
+    BOOL paymentMethodRequiresMandate = self.paymentMethodParams.type == STPPaymentMethodTypeSEPADebit || self.paymentMethodParams.type == STPPaymentMethodTypeBacsDebit || self.paymentMethodParams.type == STPPaymentMethodTypeAUBECSDebit;
+    
     if (_mandateData != nil) {
         return _mandateData;
-    } else if (self.paymentMethodParams.type == STPPaymentMethodTypeSEPADebit && self.mandate == nil) {
+    } else if (self.mandate == nil && paymentMethodRequiresMandate) {
         // Create default infer from client mandate_data
         STPMandateDataParams *mandateData = [[STPMandateDataParams alloc] init];
         STPMandateCustomerAcceptanceParams *customerAcceptance = [[STPMandateCustomerAcceptanceParams alloc] init];
@@ -111,6 +114,22 @@
              NSStringFromSelector(@selector(mandateData)) : @"mandate_data",
              NSStringFromSelector(@selector(mandate)) : @"mandate",
              };
+}
+
+#pragma mark - Utilities
+
++ (BOOL)isClientSecretValid:(NSString *)clientSecret {
+    static dispatch_once_t onceToken;
+    static NSRegularExpression *regex = nil;
+    dispatch_once(&onceToken, ^{
+        regex = [[NSRegularExpression alloc] initWithPattern:@"^seti_[^_]+_secret_[^_]+$"
+                                                     options:0
+                                                       error:NULL];
+    });
+
+    return ([regex numberOfMatchesInString:clientSecret
+                                   options:NSMatchingAnchored
+                                     range:NSMakeRange(0, clientSecret.length)]) == 1;
 }
 
 @end

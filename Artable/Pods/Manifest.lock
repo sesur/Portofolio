@@ -291,7 +291,7 @@ PODS:
     - nanopb/encode (= 0.3.9011)
   - nanopb/decode (0.3.9011)
   - nanopb/encode (0.3.9011)
-  - Stripe (18.3.0)
+  - Stripe (19.2.0)
 
 DEPENDENCIES:
   - Alamofire
@@ -362,7 +362,7 @@ SPEC CHECKSUMS:
   Kingfisher: dc6e0f53bb5b12c3e75bedb0e01bbd7a640eea69
   leveldb-library: 55d93ee664b4007aac644a782d11da33fba316f7
   nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
-  Stripe: 35b9a54e698c82163d2ef105187a996d009fd386
+  Stripe: d481c2dab9a892fd923f097f854661217f70dc7f
 
 PODFILE CHECKSUM: 69fb65f8aad6af48a1293a44376cab676bd87f67
 

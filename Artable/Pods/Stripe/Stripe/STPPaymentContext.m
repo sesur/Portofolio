@@ -10,6 +10,7 @@
 #import <objc/runtime.h>
 
 #import "PKPaymentAuthorizationViewController+Stripe_Blocks.h"
+#import "STPAnalyticsClient.h"
 #import "STPAddCardViewController+Private.h"
 #import "STPCustomerContext+Private.h"
 #import "STPDispatchFunctions.h"
@@ -41,7 +42,6 @@ typedef NS_ENUM(NSUInteger, STPPaymentContextState) {
     @property (nonatomic) STPPaymentConfiguration *configuration;
     @property (nonatomic) STPTheme *theme;
     @property (nonatomic) id<STPBackendAPIAdapter> apiAdapter;
-    @property (nonatomic) STPAPIClient *apiClient;
     @property (nonatomic) STPPromise<STPPaymentOptionTuple *> *loadingPromise;
 
     // these wrap hostViewController's promises because the hostVC is nil at init-time
@@ -67,6 +67,10 @@ typedef NS_ENUM(NSUInteger, STPPaymentContextState) {
     @end
 
 @implementation STPPaymentContext
+
++ (void)initialize{
+    [[STPAnalyticsClient sharedClient] addClassToProductUsageIfNecessary:[self class]];
+}
 
 - (instancetype)initWithCustomerContext:(STPCustomerContext *)customerContext {
     return [self initWithAPIAdapter:customerContext];
@@ -96,7 +100,7 @@ typedef NS_ENUM(NSUInteger, STPPaymentContextState) {
         _theme = theme;
         _willAppearPromise = [STPVoidPromise new];
         _didAppearPromise = [STPVoidPromise new];
-        _apiClient = [[STPAPIClient alloc] initWithPublishableKey:configuration.publishableKey];
+        _apiClient = [STPAPIClient sharedClient];
         _paymentCurrency = @"USD";
         _paymentCountry = @"US";
         _paymentAmountModel = [[STPPaymentContextAmountModel alloc] initWithAmount:0];

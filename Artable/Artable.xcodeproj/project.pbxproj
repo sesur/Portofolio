@@ -34,7 +34,6 @@
 		7D664ECA22A76AB7002860F8 /* UserServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6ADDBB22827907004CBE9E /* UserServices.swift */; };
 		7D664ECB22A76AFD002860F8 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6ADDB822812E26004CBE9E /* User.swift */; };
 		7D664ECC22A76B53002860F8 /* StripeCart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D64CB3E229B8CF8007A4DD6 /* StripeCart.swift */; };
-		7D664ECE22A78FEA002860F8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7D664ECD22A78FEA002860F8 /* GoogleService-Info.plist */; };
 		7D6ADDB922812E26004CBE9E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6ADDB822812E26004CBE9E /* User.swift */; };
 		7D6ADDBC22827907004CBE9E /* UserServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6ADDBB22827907004CBE9E /* UserServices.swift */; };
 		7D807EB32254612B008558A1 /* ProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D807EB22254612B008558A1 /* ProductCell.xib */; };
@@ -97,7 +96,6 @@
 		7D64CB39229B84F5007A4DD6 /* ChartItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChartItemCell.xib; sourceTree = "<group>"; };
 		7D64CB3E229B8CF8007A4DD6 /* StripeCart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StripeCart.swift; sourceTree = "<group>"; };
 		7D64CB40229E35B0007A4DD6 /* StripeApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StripeApi.swift; sourceTree = "<group>"; };
-		7D664ECD22A78FEA002860F8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7D6ADDB822812E26004CBE9E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		7D6ADDBB22827907004CBE9E /* UserServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserServices.swift; sourceTree = "<group>"; };
 		7D807EB22254612B008558A1 /* ProductCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductCell.xib; sourceTree = "<group>"; };
@@ -119,6 +117,7 @@
 		8BF5DA5AA04C04204F020664 /* Pods-Artable.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Artable.release.xcconfig"; path = "Target Support Files/Pods-Artable/Pods-Artable.release.xcconfig"; sourceTree = "<group>"; };
 		B27C86644412E0A0F502A9F9 /* Pods_ArtableAdmin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArtableAdmin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7B116F41B9B2A93048D49FD /* Pods-ArtableAdmin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArtableAdmin.release.xcconfig"; path = "Target Support Files/Pods-ArtableAdmin/Pods-ArtableAdmin.release.xcconfig"; sourceTree = "<group>"; };
+		CA52BF782475D5A80053A0A3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = "GoogleService-Info.plist"; path = "../../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,13 +160,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		7D2597B82247508C00B81C68 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		7D2597B92247509900B81C68 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -185,12 +177,10 @@
 		7D2597BA224750B200B81C68 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				7D59443A2241EEBB0007193D /* LaunchScreen.storyboard */,
 				7D5944352241EEB90007193D /* Main.storyboard */,
 				7D3CB3A9224DD5F500AA3128 /* ForgotPaswordViewController.xib */,
 				7D59445B2241FAD70007193D /* LoginStoryboard.storyboard */,
 				7D1F6A04226184670036A595 /* ProductDetailViewController.xib */,
-				7D94B9CE22488A7200C21CD4 /* GoogleService-Info.plist */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -198,7 +188,7 @@
 		7D5944252241EEB90007193D = {
 			isa = PBXGroup;
 			children = (
-				7D5944592241EF2E0007193D /* Share */,
+				7D5944592241EF2E0007193D /* Shared */,
 				7D5944302241EEB90007193D /* Artable */,
 				7D5944482241EF080007193D /* ArtableAdmin */,
 				7D59442F2241EEB90007193D /* Products */,
@@ -219,14 +209,9 @@
 		7D5944302241EEB90007193D /* Artable */ = {
 			isa = PBXGroup;
 			children = (
-				7D64CB3D229B8CDF007A4DD6 /* Stripe */,
 				7D6ADDBA228278DF004CBE9E /* Services */,
-				7D2597BF2248848900B81C68 /* Artable.entitlements */,
-				7D2597B82247508C00B81C68 /* View */,
-				7D2597B92247509900B81C68 /* Controller */,
-				7D5944312241EEB90007193D /* AppDelegate.swift */,
-				7D2597BA224750B200B81C68 /* Storyboards */,
-				7D59443D2241EEBB0007193D /* Info.plist */,
+				CA52BF742475D4EA0053A0A3 /* UI */,
+				CA52BF732475D4C60053A0A3 /* Main */,
 			);
 			path = Artable;
 			sourceTree = "<group>";
@@ -234,25 +219,20 @@
 		7D5944482241EF080007193D /* ArtableAdmin */ = {
 			isa = PBXGroup;
 			children = (
-				7D5944492241EF080007193D /* AppDelegate.swift */,
-				7D87216C2262DDB0006D9A52 /* Controller */,
-				7D87216F2262DDF4006D9A52 /* Storyboards */,
-				7D5944552241EF090007193D /* Info.plist */,
-				7D664ECD22A78FEA002860F8 /* GoogleService-Info.plist */,
+				CA52BF772475D5A80053A0A3 /* Main */,
+				CA52BF792475D65A0053A0A3 /* UI */,
 			);
 			path = ArtableAdmin;
 			sourceTree = "<group>";
 		};
-		7D5944592241EF2E0007193D /* Share */ = {
+		7D5944592241EF2E0007193D /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				7DFB7610224F25C6004897FA /* Xibs */,
+				CA52BF7C2475D6CB0053A0A3 /* UI */,
 				7DFB760C224F1D1D004897FA /* Model */,
-				7D94B9D72248B37C00C21CD4 /* Views */,
 				7D94B9D62248B36400C21CD4 /* Utils */,
-				7D5944382241EEBB0007193D /* Assets.xcassets */,
 			);
-			path = Share;
+			path = Shared;
 			sourceTree = "<group>";
 		};
 		7D64CB3D229B8CDF007A4DD6 /* Stripe */ = {
@@ -267,7 +247,8 @@
 		7D6ADDBA228278DF004CBE9E /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				7D6ADDBB22827907004CBE9E /* UserServices.swift */,
+				7D64CB3D229B8CDF007A4DD6 /* Stripe */,
+				CA52BF762475D58D0053A0A3 /* Firestore */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -305,10 +286,8 @@
 		7D94B9D72248B37C00C21CD4 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				7D94B9D82248B39800C21CD4 /* RoundedViews.swift */,
-				7DFB7611224F25FE004897FA /* CategoryCell.swift */,
-				7DFB761E224F4E34004897FA /* ProductCell.swift */,
-				7D64CB38229B84F5007A4DD6 /* ChartItemCell.swift */,
+				CA52BF7A2475D6820053A0A3 /* Helpers */,
+				CA52BF7B2475D68E0053A0A3 /* Cells */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -332,6 +311,90 @@
 				7D64CB39229B84F5007A4DD6 /* ChartItemCell.xib */,
 			);
 			path = Xibs;
+			sourceTree = "<group>";
+		};
+		CA52BF732475D4C60053A0A3 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				7D5944312241EEB90007193D /* AppDelegate.swift */,
+				7D59443D2241EEBB0007193D /* Info.plist */,
+				7D94B9CE22488A7200C21CD4 /* GoogleService-Info.plist */,
+				7D2597BF2248848900B81C68 /* Artable.entitlements */,
+				7D5944382241EEBB0007193D /* Assets.xcassets */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		CA52BF742475D4EA0053A0A3 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				7D2597BA224750B200B81C68 /* Storyboards */,
+				CA52BF752475D50B0053A0A3 /* Launch */,
+				7D2597B92247509900B81C68 /* Controller */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		CA52BF752475D50B0053A0A3 /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				7D59443A2241EEBB0007193D /* LaunchScreen.storyboard */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		CA52BF762475D58D0053A0A3 /* Firestore */ = {
+			isa = PBXGroup;
+			children = (
+				7D6ADDBB22827907004CBE9E /* UserServices.swift */,
+			);
+			path = Firestore;
+			sourceTree = "<group>";
+		};
+		CA52BF772475D5A80053A0A3 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				7D5944492241EF080007193D /* AppDelegate.swift */,
+				7D5944552241EF090007193D /* Info.plist */,
+				CA52BF782475D5A80053A0A3 /* GoogleService-Info.plist */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		CA52BF792475D65A0053A0A3 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				7D87216C2262DDB0006D9A52 /* Controller */,
+				7D87216F2262DDF4006D9A52 /* Storyboards */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		CA52BF7A2475D6820053A0A3 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				7D94B9D82248B39800C21CD4 /* RoundedViews.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		CA52BF7B2475D68E0053A0A3 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				7DFB7611224F25FE004897FA /* CategoryCell.swift */,
+				7DFB761E224F4E34004897FA /* ProductCell.swift */,
+				7D64CB38229B84F5007A4DD6 /* ChartItemCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		CA52BF7C2475D6CB0053A0A3 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				7DFB7610224F25C6004897FA /* Xibs */,
+				7D94B9D72248B37C00C21CD4 /* Views */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -448,7 +511,6 @@
 				7D807EB42254612B008558A1 /* ProductCell.xib in Resources */,
 				7DFB7616224F25FE004897FA /* CategoryCell.xib in Resources */,
 				7D59444F2241EF080007193D /* Main.storyboard in Resources */,
-				7D664ECE22A78FEA002860F8 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -687,6 +749,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -741,6 +804,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -752,7 +816,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YTY3T23FT4;
-				INFOPLIST_FILE = Artable/Info.plist;
+				INFOPLIST_FILE = Artable/Main/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -771,7 +835,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YTY3T23FT4;
-				INFOPLIST_FILE = Artable/Info.plist;
+				INFOPLIST_FILE = Artable/Main/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -790,7 +854,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YTY3T23FT4;
-				INFOPLIST_FILE = ArtableAdmin/Info.plist;
+				INFOPLIST_FILE = ArtableAdmin/Main/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -809,7 +873,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YTY3T23FT4;
-				INFOPLIST_FILE = ArtableAdmin/Info.plist;
+				INFOPLIST_FILE = ArtableAdmin/Main/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
