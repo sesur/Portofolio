@@ -17,9 +17,9 @@ class MenuDelegate: NSObject {
     
     init(tableView: UITableView, state: StateController, completion: CellHandler) {
         self.stateController = state
+        self.cellhandler = completion
         super.init()
         tableView.delegate = self
-        self.cellhandler = completion
     }
 }
 
