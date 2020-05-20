@@ -122,13 +122,10 @@
 				7D1D2F50223645B200998C60 /* Model */,
 				7D1D2F4F223645A900998C60 /* View */,
 				7D1D2F4D2236459100998C60 /* Controller */,
-				7D1D2F37223640F500998C60 /* Main.storyboard */,
-				7D1D2F3A223640F800998C60 /* Assets.xcassets */,
+				CA52BF6A2475A1C30053A0A3 /* Main */,
 				7D2DC5E22238BBC60088CBB4 /* Services */,
 				7D1D2F53223653BB00998C60 /* Utilities */,
 				7D1D2F4C2236458700998C60 /* Resources */,
-				7D1D2F3C223640F800998C60 /* LaunchScreen.storyboard */,
-				7D1D2F3F223640F800998C60 /* Info.plist */,
 			);
 			path = "Star Trivia";
 			sourceTree = "<group>";
@@ -230,6 +227,25 @@
 				F1477FBD582316E670B18577 /* Pods-Star Trivia.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		CA52BF6A2475A1C30053A0A3 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				CA52BF6B2475A1DF0053A0A3 /* Launch */,
+				7D1D2F37223640F500998C60 /* Main.storyboard */,
+				7D1D2F3A223640F800998C60 /* Assets.xcassets */,
+				7D1D2F3F223640F800998C60 /* Info.plist */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		CA52BF6B2475A1DF0053A0A3 /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				7D1D2F3C223640F800998C60 /* LaunchScreen.storyboard */,
+			);
+			path = Launch;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -522,7 +538,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YTY3T23FT4;
-				INFOPLIST_FILE = "Star Trivia/Info.plist";
+				INFOPLIST_FILE = "Star Trivia/Main/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -542,7 +558,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YTY3T23FT4;
-				INFOPLIST_FILE = "Star Trivia/Info.plist";
+				INFOPLIST_FILE = "Star Trivia/Main/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
