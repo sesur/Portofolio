@@ -99,8 +99,8 @@ class LoadingViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
-//        activityIndicator.startAnimating()
-                DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) { [weak self] in
+        activityIndicator.startAnimating()
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.7) { [weak self] in
                     self?.activityIndicator.startAnimating()
                 }
     }
