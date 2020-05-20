@@ -35,6 +35,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         navigationController.navigationBar.isTranslucent = true
         navigationController.view.backgroundColor = .clear
         
+        navigationController.navigationBar.barStyle = .black
+        
         UINavigationBar.appearance().tintColor = .white
         return navigationController
     }
