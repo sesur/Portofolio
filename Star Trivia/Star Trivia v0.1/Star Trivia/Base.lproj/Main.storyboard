@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mtX-VK-K6E">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mtX-VK-K6E">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -172,7 +172,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jpN-ES-z53" customClass="BlackBackgroundButton" customModule="Star_Trivia" customModuleProvider="target">
-                                <rect key="frame" x="87.666666666666686" y="694" width="239" height="43"/>
+                                <rect key="frame" x="87.666666666666686" y="700" width="239" height="43"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.39889768835616429" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="239" id="S9G-DE-KBl"/>
@@ -252,10 +252,10 @@
                             <constraint firstItem="ash-HS-k2o" firstAttribute="top" secondItem="5hq-n8-3Hh" secondAttribute="bottom" constant="20" id="2xE-YA-Oxu"/>
                             <constraint firstItem="dQu-hy-356" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="3Hh-Se-Epu"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dQu-hy-356" secondAttribute="trailing" id="9By-Kk-VZs"/>
+                            <constraint firstItem="jpN-ES-z53" firstAttribute="top" secondItem="ash-HS-k2o" secondAttribute="bottom" constant="30" id="D11-NG-baT"/>
                             <constraint firstItem="ash-HS-k2o" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HnP-Oj-2Cn"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5hq-n8-3Hh" secondAttribute="trailing" constant="20" id="LgS-cS-W3S"/>
                             <constraint firstItem="5hq-n8-3Hh" firstAttribute="top" secondItem="VTc-Hr-O0u" secondAttribute="bottom" constant="60" id="Sfw-Rg-pAN"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="jpN-ES-z53" secondAttribute="bottom" constant="125" id="Zea-gG-W21"/>
                             <constraint firstItem="jpN-ES-z53" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bHD-CM-wfL"/>
                             <constraint firstAttribute="bottom" secondItem="dQu-hy-356" secondAttribute="bottom" id="gmK-9q-TV8"/>
                             <constraint firstItem="5hq-n8-3Hh" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="hP8-rb-1UN"/>
