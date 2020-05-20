@@ -56,15 +56,31 @@
 		7D6B6E92228BB82A00BADC7B /* CalculatorTips */ = {
 			isa = PBXGroup;
 			children = (
-				7D6B6E93228BB82A00BADC7B /* AppDelegate.swift */,
-				7D6B6E95228BB82A00BADC7B /* ViewController.swift */,
-				7D6B6EA5228BDDAC00BADC7B /* CalculatorViewController.swift */,
-				7D6B6E97228BB82A00BADC7B /* Main.storyboard */,
-				7D6B6E9A228BB82D00BADC7B /* Assets.xcassets */,
-				7D6B6E9C228BB82D00BADC7B /* LaunchScreen.storyboard */,
-				7D6B6E9F228BB82D00BADC7B /* Info.plist */,
+				CA52BF702475CB550053A0A3 /* Main */,
+				CA52BF712475CBA60053A0A3 /* UI */,
 			);
 			path = CalculatorTips;
+			sourceTree = "<group>";
+		};
+		CA52BF702475CB550053A0A3 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				7D6B6E93228BB82A00BADC7B /* AppDelegate.swift */,
+				7D6B6E97228BB82A00BADC7B /* Main.storyboard */,
+				7D6B6E9A228BB82D00BADC7B /* Assets.xcassets */,
+				7D6B6E9F228BB82D00BADC7B /* Info.plist */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		CA52BF712475CBA60053A0A3 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				7D6B6E95228BB82A00BADC7B /* ViewController.swift */,
+				7D6B6EA5228BDDAC00BADC7B /* CalculatorViewController.swift */,
+				7D6B6E9C228BB82D00BADC7B /* LaunchScreen.storyboard */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,7 +305,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YTY3T23FT4;
-				INFOPLIST_FILE = CalculatorTips/Info.plist;
+				INFOPLIST_FILE = CalculatorTips/Main/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +323,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YTY3T23FT4;
-				INFOPLIST_FILE = CalculatorTips/Info.plist;
+				INFOPLIST_FILE = CalculatorTips/Main/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
