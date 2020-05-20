@@ -84,15 +84,10 @@
 		7D19726A222D14D30010CA1C /* iFood */ = {
 			isa = PBXGroup;
 			children = (
-				7D19726B222D14D30010CA1C /* AppDelegate.swift */,
 				7D65E69A22EC07E900E768E7 /* Coordinator */,
+				CA52BF6C2475C8720053A0A3 /* Main */,
 				7D19727D222D14E70010CA1C /* Model */,
-				7D19727F222D14FF0010CA1C /* View */,
-				7D19727E222D14F50010CA1C /* Controller */,
-				7D19726F222D14D30010CA1C /* Main.storyboard */,
-				7D197272222D14D40010CA1C /* Assets.xcassets */,
-				7D197274222D14D50010CA1C /* LaunchScreen.storyboard */,
-				7D197277222D14D50010CA1C /* Info.plist */,
+				CA52BF6D2475C8FD0053A0A3 /* UI */,
 			);
 			path = iFood;
 			sourceTree = "<group>";
@@ -120,13 +115,13 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		7D19727F222D14FF0010CA1C /* View */ = {
+		7D19727F222D14FF0010CA1C /* Cells */ = {
 			isa = PBXGroup;
 			children = (
 				7D1972A8222E6B0E0010CA1C /* CategoryCell.swift */,
 				7D1972AC222FB36A0010CA1C /* SubmenuCell.swift */,
 			);
-			path = View;
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		7D65E69A22EC07E900E768E7 /* Coordinator */ = {
@@ -147,6 +142,35 @@
 				7D65E6A222EC0FBC00E768E7 /* MenuProtocol.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		CA52BF6C2475C8720053A0A3 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				7D19726B222D14D30010CA1C /* AppDelegate.swift */,
+				7D19726F222D14D30010CA1C /* Main.storyboard */,
+				7D197272222D14D40010CA1C /* Assets.xcassets */,
+				7D197277222D14D50010CA1C /* Info.plist */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		CA52BF6D2475C8FD0053A0A3 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				CA52BF6E2475C90A0053A0A3 /* Launch */,
+				7D19727F222D14FF0010CA1C /* Cells */,
+				7D19727E222D14F50010CA1C /* Controller */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		CA52BF6E2475C90A0053A0A3 /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				7D197274222D14D50010CA1C /* LaunchScreen.storyboard */,
+			);
+			path = Launch;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -321,6 +345,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -375,6 +400,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -385,7 +411,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YTY3T23FT4;
-				INFOPLIST_FILE = iFood/Info.plist;
+				INFOPLIST_FILE = iFood/Main/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -403,7 +429,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YTY3T23FT4;
-				INFOPLIST_FILE = iFood/Info.plist;
+				INFOPLIST_FILE = iFood/Main/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
