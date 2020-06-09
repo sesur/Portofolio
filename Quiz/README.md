@@ -1,5 +1,3 @@
-[![Build Status](https://travis-ci.com/sesur/Portofolio/Quiz/quiz.svg?branch=master)](https://travis-ci.com/sesur/Portofolio/Quiz/)
 
+[![Build Status](https://travis-ci.com/sesur/Portofolio.svg?branch=master)](https://travis-ci.com/sesur/Portofolio)
 
-
-https://github.com/sesur/Portofolio/new/setup-ci/Quiz
