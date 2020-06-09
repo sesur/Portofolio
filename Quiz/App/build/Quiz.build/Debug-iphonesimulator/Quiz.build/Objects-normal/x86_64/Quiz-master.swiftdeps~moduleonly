@@ -1,0 +1,16 @@
+version: "Apple Swift version 5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)"
+options: "c2940d20839c4ca37a6f32f6751ac8a2"
+build_time: [1591557397, 17506000]
+inputs:
+  "/Users/sergiusuru/Sergiu/Learn Swift/Portofolio/Quiz/App/Quiz/Routing/NavigationControllerRouter.swift": !dirty [1589307410, 92802805]
+  "/Users/sergiusuru/Sergiu/Learn Swift/Portofolio/Quiz/App/Quiz/Routing/ViewControllerFactory.swift": !dirty [1588963772, 567979713]
+  "/Users/sergiusuru/Sergiu/Learn Swift/Portofolio/Quiz/App/Quiz/UI/Cells/WrongCell/WrongAnswerCell.swift": !dirty [1577572832, 695755259]
+  "/Users/sergiusuru/Sergiu/Learn Swift/Portofolio/Quiz/App/Quiz/Presentation/Results/ResultsPresenter.swift": !dirty [1589400145, 823570795]
+  "/Users/sergiusuru/Sergiu/Learn Swift/Portofolio/Quiz/App/Quiz/Main/iOSViewControllerFactory.swift": !dirty [1589405648, 983134470]
+  "/Users/sergiusuru/Sergiu/Learn Swift/Portofolio/Quiz/App/Quiz/UI/Cells/CorrectCell/CorrectAnswerCell.swift": !dirty [1577576431, 443332998]
+  "/Users/sergiusuru/Sergiu/Learn Swift/Portofolio/Quiz/App/Quiz/Presentation/Question/QuestionPresenter.swift": !dirty [1588029023, 428755680]
+  "/Users/sergiusuru/Sergiu/Learn Swift/Portofolio/Quiz/App/Quiz/UI/Helpers/UITableView+Extension.swift": !dirty [1577573096, 256749014]
+  "/Users/sergiusuru/Sergiu/Learn Swift/Portofolio/Quiz/App/Quiz/UI/Question/QuestionViewController.swift": !dirty [1591540857, 351606570]
+  "/Users/sergiusuru/Sergiu/Learn Swift/Portofolio/Quiz/App/Quiz/Presentation/Results/PresentableAnswerModel.swift": !dirty [1577572961, 970337143]
+  "/Users/sergiusuru/Sergiu/Learn Swift/Portofolio/Quiz/App/Quiz/UI/Results/ResultsViewController.swift": !dirty [1589405391, 408962647]
+  "/Users/sergiusuru/Sergiu/Learn Swift/Portofolio/Quiz/App/Quiz/Main/AppDelegate.swift": !dirty [1591557385, 956758041]
