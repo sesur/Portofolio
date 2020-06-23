@@ -1,0 +1,179 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "iOSViewControllerFactory"
+provides-nominal:
+- "4Quiz24iOSViewControllerFactoryC"
+provides-member:
+- ["4Quiz24iOSViewControllerFactoryC", ""]
+provides-dynamic-lookup:
+- "correctAnswer"
+- "options"
+- "questionViewController"
+- "questions"
+- "resultsViewController"
+depends-top-level:
+- "AssignmentPrecedence"
+- "Bool"
+- !private "FloatLiteralType"
+- !private "IntegerLiteralType"
+- "Question"
+- !private "QuestionPresenter"
+- "QuestionViewController"
+- "Results"
+- !private "ResultsPresenter"
+- !private "ResultsViewController"
+- "String"
+- !private "StringLiteralType"
+- "UIViewController"
+- "ViewControllerFactory"
+- "Void"
+- !private "fatalError"
+- "iOSViewControllerFactory"
+depends-member:
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "title"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "title"]
+- !private ["s23CustomStringConvertibleP", "appendInterpolation"]
+- !private ["s23CustomStringConvertibleP", "appendLiteral"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "title"]
+- !private ["s26DefaultStringInterpolationV", "appendInterpolation"]
+- !private ["s26DefaultStringInterpolationV", "appendLiteral"]
+- !private ["SQ", "init"]
+- !private ["SQ", "title"]
+- !private ["SH", "init"]
+- !private ["SH", "title"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "title"]
+- !private ["So26NSExtensionRequestHandlingP", "init"]
+- !private ["So26NSExtensionRequestHandlingP", "title"]
+- !private ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "title"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "title"]
+- !private ["4Quiz22QuestionViewControllerC", "deinit"]
+- !private ["4Quiz22QuestionViewControllerC", "init"]
+- !private ["4Quiz22QuestionViewControllerC", "title"]
+- !private ["s27StringInterpolationProtocolP", "appendInterpolation"]
+- !private ["s27StringInterpolationProtocolP", "appendLiteral"]
+- !private ["s16TextOutputStreamP", "appendInterpolation"]
+- !private ["s16TextOutputStreamP", "appendLiteral"]
+- !private ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "title"]
+- !private ["So18UIContentContainerP", "init"]
+- !private ["So18UIContentContainerP", "title"]
+- !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "title"]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "title"]
+- !private ["So11UIResponderC", "init"]
+- !private ["So11UIResponderC", "title"]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "title"]
+- !private ["So20UIScrollViewDelegateP", "init"]
+- !private ["So20UIScrollViewDelegateP", "title"]
+- !private ["So16UIStateRestoringP", "init"]
+- !private ["So16UIStateRestoringP", "title"]
+- !private ["So21UITableViewDataSourceP", "init"]
+- !private ["So21UITableViewDataSourceP", "title"]
+- !private ["So19UITableViewDelegateP", "init"]
+- !private ["So19UITableViewDelegateP", "title"]
+- !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "title"]
+- !private ["So23UIUserActivityRestoringP", "init"]
+- !private ["So23UIUserActivityRestoringP", "title"]
+- !private ["So16UIViewControllerC", "init"]
+- !private ["So16UIViewControllerC", "title"]
+- ["4Quiz21ViewControllerFactoryP", "Question"]
+- !private ["4Quiz21ViewControllerFactoryP", "QuestionPresenter"]
+- !private ["4Quiz21ViewControllerFactoryP", "QuestionViewController"]
+- ["4Quiz21ViewControllerFactoryP", "Results"]
+- !private ["4Quiz21ViewControllerFactoryP", "ResultsPresenter"]
+- !private ["4Quiz21ViewControllerFactoryP", "ResultsViewController"]
+- ["4Quiz21ViewControllerFactoryP", ""]
+- !private ["4Quiz21ViewControllerFactoryP", "correctAnswer"]
+- !private ["4Quiz21ViewControllerFactoryP", "fatalError"]
+- !private ["4Quiz21ViewControllerFactoryP", "options"]
+- !private ["4Quiz21ViewControllerFactoryP", "questionViewController"]
+- !private ["4Quiz21ViewControllerFactoryP", "questions"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "title"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "init"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "title"]
+- ["4Quiz24iOSViewControllerFactoryC", "Bool"]
+- ["4Quiz24iOSViewControllerFactoryC", "Question"]
+- !private ["4Quiz24iOSViewControllerFactoryC", "QuestionPresenter"]
+- ["4Quiz24iOSViewControllerFactoryC", "QuestionViewController"]
+- ["4Quiz24iOSViewControllerFactoryC", "Results"]
+- !private ["4Quiz24iOSViewControllerFactoryC", "ResultsPresenter"]
+- !private ["4Quiz24iOSViewControllerFactoryC", "ResultsViewController"]
+- ["4Quiz24iOSViewControllerFactoryC", "String"]
+- ["4Quiz24iOSViewControllerFactoryC", "UIViewController"]
+- ["4Quiz24iOSViewControllerFactoryC", "Void"]
+- !private ["4Quiz24iOSViewControllerFactoryC", "correctAnswer"]
+- ["4Quiz24iOSViewControllerFactoryC", "deinit"]
+- !private ["4Quiz24iOSViewControllerFactoryC", "fatalError"]
+- !private ["4Quiz24iOSViewControllerFactoryC", "options"]
+- !private ["4Quiz24iOSViewControllerFactoryC", "questionViewController"]
+- !private ["4Quiz24iOSViewControllerFactoryC", "questions"]
+depends-nominal:
+- !private "s7CVarArgP"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s23CustomStringConvertibleP"
+- !private "s26DefaultStringInterpolationV"
+- !private "SQ"
+- !private "SH"
+- !private "So8NSCodingP"
+- !private "So26NSExtensionRequestHandlingP"
+- !private "So8NSObjectC"
+- !private "So8NSObjectP"
+- !private "4Quiz22QuestionViewControllerC"
+- !private "s27StringInterpolationProtocolP"
+- !private "s16TextOutputStreamP"
+- !private "So21UIAppearanceContainerP"
+- !private "So18UIContentContainerP"
+- !private "So18UIFocusEnvironmentP"
+- !private "So30UIPasteConfigurationSupportingP"
+- !private "So11UIResponderC"
+- !private "So30UIResponderStandardEditActionsP"
+- !private "So20UIScrollViewDelegateP"
+- !private "So16UIStateRestoringP"
+- !private "So21UITableViewDataSourceP"
+- !private "So19UITableViewDelegateP"
+- !private "So18UITraitEnvironmentP"
+- !private "So23UIUserActivityRestoringP"
+- !private "So16UIViewControllerC"
+- "4Quiz21ViewControllerFactoryP"
+- !private "10Foundation27_KeyValueCodingAndObservingP"
+- !private "10Foundation37_KeyValueCodingAndObservingPublishingP"
+- "4Quiz24iOSViewControllerFactoryC"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/ObjectiveC.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreImage.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/QuartzCore.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Dispatch.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Metal.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Darwin.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Foundation.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreFoundation.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreGraphics.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Swift.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/UIKit.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Combine.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "1411776fa971e109f7729d143e728b96"
