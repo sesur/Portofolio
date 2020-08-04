@@ -11,7 +11,7 @@ import UIKit
 class VehicleViewController: UIViewController, PersonProtocol, Storyboarded {
    
     weak var coordinator: MainCoordinator?
-    var personProtocol: Person?
+    var person: Person?
     
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var modelLabel: UILabel!
@@ -35,7 +35,7 @@ class VehicleViewController: UIViewController, PersonProtocol, Storyboarded {
     }
     
     private func checkvehiclesInArray() {
-        vehiclesArray = personProtocol?.vehicleUrls ?? []
+        vehiclesArray = person?.vehicleUrls ?? []
         nextButtonLabel.isEnabled = vehiclesArray.count > 1
         previwButtonLabel.isEnabled = false
         

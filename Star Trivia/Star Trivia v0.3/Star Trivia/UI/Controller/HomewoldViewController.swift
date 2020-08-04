@@ -18,7 +18,7 @@ class HomewoldViewController: UIViewController, PersonProtocol, Storyboarded {
     @IBOutlet weak var population: UILabel!
     @IBOutlet weak var spinner: UIActivityIndicatorView!
     
-    var personProtocol: Person?
+    var person: Person?
     let api = HomeworldAPI()
     
     override func viewDidLoad() {
@@ -28,7 +28,7 @@ class HomewoldViewController: UIViewController, PersonProtocol, Storyboarded {
     }
     
     private func downloadHomeworldPerson() {
-        guard let url = personProtocol?.homeWorld else {return}
+        guard let url = person?.homeWorld else {return}
         api.getHomeworldPerson(url: url) { (result) in
             switch result {
             case .success(let person): self.setupViews(person)

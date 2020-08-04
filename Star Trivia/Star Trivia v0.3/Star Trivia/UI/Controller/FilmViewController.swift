@@ -23,7 +23,7 @@ class FilmViewController: UIViewController, PersonProtocol, Storyboarded {
     @IBOutlet weak var spinner: UIActivityIndicatorView!
     
     
-    var personProtocol: Person?
+    var person: Person?
     
     let api = FilmAPI()
     var filmsArray = [String]()
@@ -31,7 +31,7 @@ class FilmViewController: UIViewController, PersonProtocol, Storyboarded {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        filmsArray = personProtocol?.filmUrls ?? []
+        filmsArray = person?.filmUrls ?? []
         nextButtonLabel.isEnabled = filmsArray.count > 1
         previewButtonLabel.isEnabled = false
         

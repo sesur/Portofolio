@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_5" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -21,36 +19,36 @@
             <objects>
                 <viewController storyboardIdentifier="HomeController" id="BYZ-38-t0r" customClass="HomeController" customModule="Star_Trivia" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="dQu-hy-356">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Star Trivia" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ONq-Bz-3K4">
-                                <rect key="frame" x="20" y="64" width="374" height="80"/>
+                                <rect key="frame" x="20" y="20" width="560" height="58.5"/>
                                 <fontDescription key="fontDescription" name="StarJediHollow" family="Star Jedi Hollow" pointSize="50"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5hq-n8-3Hh" customClass="BlackBackgroundView" customModule="Star_Trivia" customModuleProvider="target">
-                                <rect key="frame" x="20" y="321" width="374" height="254"/>
+                                <rect key="frame" x="20" y="173" width="560" height="254"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="uSV-gu-jfr">
-                                        <rect key="frame" x="20" y="20" width="334" height="214"/>
+                                        <rect key="frame" x="20" y="20" width="520" height="214"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="2QO-TE-rVM">
-                                                <rect key="frame" x="0.0" y="0.0" width="79.333333333333329" height="29"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="79" height="29"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i1Z-BQ-TbM">
-                                                        <rect key="frame" x="0.0" y="0.0" width="55.666666666666664" height="29"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="55.5" height="29"/>
                                                         <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
                                                         <color key="textColor" red="1" green="0.80458714852307256" blue="0.47704318742461838" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fFd-xy-Hmj">
-                                                        <rect key="frame" x="63.666666666666664" y="0.0" width="15.666666666666664" height="29"/>
+                                                        <rect key="frame" x="63.5" y="0.0" width="15.5" height="29"/>
                                                         <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -61,13 +59,13 @@
                                                 <rect key="frame" x="0.0" y="37" width="85" height="29"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="height:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eJh-oV-DxE">
-                                                        <rect key="frame" x="0.0" y="0.0" width="61.333333333333336" height="29"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="61.5" height="29"/>
                                                         <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
                                                         <color key="textColor" red="1" green="0.80458714852307256" blue="0.47704318742461838" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XVJ-Gm-eEd">
-                                                        <rect key="frame" x="69.333333333333329" y="0.0" width="15.666666666666671" height="29"/>
+                                                        <rect key="frame" x="69.5" y="0.0" width="15.5" height="29"/>
                                                         <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -78,13 +76,13 @@
                                                 <rect key="frame" x="0.0" y="74" width="76" height="29"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="mass:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EWp-6Q-kfz">
-                                                        <rect key="frame" x="0.0" y="0.0" width="52.333333333333336" height="29"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="52.5" height="29"/>
                                                         <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
                                                         <color key="textColor" red="1" green="0.80458714852307256" blue="0.47704318742461838" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qh9-2R-u8k">
-                                                        <rect key="frame" x="60.333333333333321" y="0.0" width="15.666666666666664" height="29"/>
+                                                        <rect key="frame" x="60.5" y="0.0" width="15.5" height="29"/>
                                                         <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -92,16 +90,16 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="VQX-2o-WQo">
-                                                <rect key="frame" x="0.0" y="111" width="64.333333333333329" height="29"/>
+                                                <rect key="frame" x="0.0" y="111" width="64.5" height="29"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hair:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YzP-YV-RmL">
-                                                        <rect key="frame" x="0.0" y="0.0" width="40.666666666666664" height="29"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="41" height="29"/>
                                                         <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
                                                         <color key="textColor" red="1" green="0.80458714852307256" blue="0.47704318742461838" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YKN-z8-bBO">
-                                                        <rect key="frame" x="48.666666666666671" y="0.0" width="15.666666666666671" height="29"/>
+                                                        <rect key="frame" x="49" y="0.0" width="15.5" height="29"/>
                                                         <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -112,13 +110,13 @@
                                                 <rect key="frame" x="0.0" y="148" width="115" height="29"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="birth year:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zpr-zD-Y3c">
-                                                        <rect key="frame" x="0.0" y="0.0" width="91.333333333333329" height="29"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="91.5" height="29"/>
                                                         <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
                                                         <color key="textColor" red="1" green="0.80458714852307256" blue="0.47704318742461838" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xqy-ic-Xvi">
-                                                        <rect key="frame" x="99.333333333333343" y="0.0" width="15.666666666666671" height="29"/>
+                                                        <rect key="frame" x="99.5" y="0.0" width="15.5" height="29"/>
                                                         <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -129,13 +127,13 @@
                                                 <rect key="frame" x="0.0" y="185" width="91" height="29"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="gender:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qum-9F-Fe8">
-                                                        <rect key="frame" x="0.0" y="0.0" width="67.333333333333329" height="29"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="67.5" height="29"/>
                                                         <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
                                                         <color key="textColor" red="1" green="0.80458714852307256" blue="0.47704318742461838" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8XV-3B-pyI">
-                                                        <rect key="frame" x="75.333333333333329" y="0.0" width="15.666666666666671" height="29"/>
+                                                        <rect key="frame" x="75.5" y="0.0" width="15.5" height="29"/>
                                                         <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -155,7 +153,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jpN-ES-z53" customClass="BlackBackgroundButton" customModule="Star_Trivia" customModuleProvider="target">
-                                <rect key="frame" x="87.666666666666686" y="715" width="239" height="43"/>
+                                <rect key="frame" x="180.5" y="567" width="239" height="35"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.39889768835616429" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="239" id="S9G-DE-KBl"/>
@@ -165,14 +163,14 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="randomButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CQC-Hk-JrS"/>
+                                    <action selector="pressRandomButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CQC-Hk-JrS"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ash-HS-k2o" customClass="BlackBackgroundButton" customModule="Star_Trivia" customModuleProvider="target">
-                                <rect key="frame" x="20" y="595" width="374" height="75"/>
+                                <rect key="frame" x="20" y="447" width="560" height="75"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="Cx8-CR-oeM">
-                                        <rect key="frame" x="20" y="15" width="334" height="45"/>
+                                        <rect key="frame" x="20" y="15" width="520" height="45"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dxd-k6-U6m" customClass="FadeButtonAnimation" customModule="Star_Trivia" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="45" height="45"/>
@@ -182,28 +180,28 @@
                                                 </constraints>
                                                 <state key="normal" image="homeworld"/>
                                                 <connections>
-                                                    <action selector="homeworldButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wex-dw-VCD"/>
+                                                    <action selector="pressHomeWorldButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wex-dw-VCD"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UJv-Ay-j38" customClass="FadeButtonAnimation" customModule="Star_Trivia" customModuleProvider="target">
-                                                <rect key="frame" x="96.333333333333343" y="0.0" width="45" height="45"/>
+                                                <rect key="frame" x="158.5" y="0.0" width="45" height="45"/>
                                                 <state key="normal" image="vehicles"/>
                                                 <connections>
-                                                    <action selector="vehicleButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="a6K-xQ-ua9"/>
+                                                    <action selector="pressVehicleButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="a6K-xQ-ua9"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wr0-i8-Kvp" customClass="FadeButtonAnimation" customModule="Star_Trivia" customModuleProvider="target">
-                                                <rect key="frame" x="192.66666666666666" y="0.0" width="45" height="45"/>
+                                                <rect key="frame" x="316.5" y="0.0" width="45" height="45"/>
                                                 <state key="normal" image="starships"/>
                                                 <connections>
-                                                    <action selector="starshipButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sKd-c6-I6j"/>
+                                                    <action selector="pressStarshipButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sKd-c6-I6j"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xeh-bd-GEj" customClass="FadeButtonAnimation" customModule="Star_Trivia" customModuleProvider="target">
-                                                <rect key="frame" x="289" y="0.0" width="45" height="45"/>
+                                                <rect key="frame" x="475" y="0.0" width="45" height="45"/>
                                                 <state key="normal" image="films"/>
                                                 <connections>
-                                                    <action selector="filmsButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pGJ-An-3Ch"/>
+                                                    <action selector="pressFilmsButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pGJ-An-3Ch"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -226,7 +224,7 @@
                                 </constraints>
                             </view>
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="VTc-Hr-O0u">
-                                <rect key="frame" x="188.66666666666666" y="429.66666666666669" width="37" height="37"/>
+                                <rect key="frame" x="281.5" y="281.5" width="37" height="37"/>
                                 <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </activityIndicatorView>
                         </subviews>
@@ -255,16 +253,16 @@
                     <navigationItem key="navigationItem" id="dbN-c5-qDt"/>
                     <connections>
                         <outlet property="birthYear" destination="xqy-ic-Xvi" id="nnF-9G-c9r"/>
-                        <outlet property="filmsButtonLabel" destination="xeh-bd-GEj" id="Lwo-gc-shB"/>
+                        <outlet property="filmsLabel" destination="xeh-bd-GEj" id="Lwo-gc-shB"/>
                         <outlet property="gender" destination="8XV-3B-pyI" id="5y5-Br-18b"/>
                         <outlet property="hair" destination="YKN-z8-bBO" id="VTC-nX-kNw"/>
                         <outlet property="height" destination="XVJ-Gm-eEd" id="Zdh-Lw-ubb"/>
-                        <outlet property="homeworldButtonLabel" destination="dxd-k6-U6m" id="mk5-7G-nrY"/>
+                        <outlet property="homeWorldLabel" destination="dxd-k6-U6m" id="mk5-7G-nrY"/>
                         <outlet property="mass" destination="qh9-2R-u8k" id="yOk-fC-wOr"/>
                         <outlet property="name" destination="fFd-xy-Hmj" id="PO0-MH-FGQ"/>
                         <outlet property="spinner" destination="VTc-Hr-O0u" id="qiA-Eg-vhS"/>
-                        <outlet property="starshipsButtonLabel" destination="Wr0-i8-Kvp" id="1oJ-aZ-k49"/>
-                        <outlet property="vehiclesButtonLabel" destination="UJv-Ay-j38" id="87p-DN-317"/>
+                        <outlet property="starshipsLabel" destination="Wr0-i8-Kvp" id="1oJ-aZ-k49"/>
+                        <outlet property="vehiclesLabel" destination="UJv-Ay-j38" id="87p-DN-317"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -276,35 +274,35 @@
             <objects>
                 <viewController storyboardIdentifier="HomewoldViewController" id="fXP-yy-qhx" customClass="HomewoldViewController" customModule="Star_Trivia" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aGm-Ib-QMr">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="space1" translatesAutoresizingMaskIntoConstraints="NO" id="7HI-NI-c9n">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Homeworld" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="kmK-0h-8fS">
-                                <rect key="frame" x="20" y="64" width="374" height="80"/>
+                                <rect key="frame" x="20" y="20" width="560" height="58.5"/>
                                 <fontDescription key="fontDescription" name="StarJediHollow" family="Star Jedi Hollow" pointSize="50"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O20-7B-wPm" customClass="BlackBackgroundButton" customModule="Star_Trivia" customModuleProvider="target">
-                                <rect key="frame" x="20" y="361.33333333333331" width="374" height="173.33333333333331"/>
+                                <rect key="frame" x="20" y="213.5" width="560" height="173"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="DM8-ET-gLb">
-                                        <rect key="frame" x="20" y="33.333333333333378" width="334" height="106.66666666666669"/>
+                                        <rect key="frame" x="20" y="32.5" width="520" height="108"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="C6p-cG-Ekr">
-                                                <rect key="frame" x="0.0" y="0.0" width="79.333333333333329" height="20.666666666666668"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="79" height="21"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ptl-RW-8eM">
-                                                        <rect key="frame" x="0.0" y="0.0" width="55.666666666666664" height="20.666666666666668"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="55.5" height="21"/>
                                                         <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
                                                         <color key="textColor" red="1" green="0.80458714850000002" blue="0.47704318740000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QrV-ub-dsv">
-                                                        <rect key="frame" x="63.666666666666664" y="0.0" width="15.666666666666664" height="20.666666666666668"/>
+                                                        <rect key="frame" x="63.5" y="0.0" width="15.5" height="21"/>
                                                         <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -312,16 +310,16 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ucR-ob-nZf">
-                                                <rect key="frame" x="0.0" y="28.666666666666629" width="93.333333333333329" height="20.666666666666671"/>
+                                                <rect key="frame" x="0.0" y="29" width="93" height="21"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="climate:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F9O-Wl-frk">
-                                                        <rect key="frame" x="0.0" y="0.0" width="69.666666666666671" height="20.666666666666668"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="69.5" height="21"/>
                                                         <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
                                                         <color key="textColor" red="1" green="0.80458714850000002" blue="0.47704318740000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="okn-R8-Tjp">
-                                                        <rect key="frame" x="77.666666666666671" y="0.0" width="15.666666666666671" height="20.666666666666668"/>
+                                                        <rect key="frame" x="77.5" y="0.0" width="15.5" height="21"/>
                                                         <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -329,16 +327,16 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="g50-1p-gnZ">
-                                                <rect key="frame" x="0.0" y="57.333333333333307" width="88.333333333333329" height="20.666666666666664"/>
+                                                <rect key="frame" x="0.0" y="58" width="88" height="21"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="terrain:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="27X-fc-jRH">
-                                                        <rect key="frame" x="0.0" y="0.0" width="64.666666666666671" height="20.666666666666668"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="64.5" height="21"/>
                                                         <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
                                                         <color key="textColor" red="1" green="0.80458714850000002" blue="0.47704318740000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="51e-hk-iEr">
-                                                        <rect key="frame" x="72.666666666666671" y="0.0" width="15.666666666666671" height="20.666666666666668"/>
+                                                        <rect key="frame" x="72.5" y="0.0" width="15.5" height="21"/>
                                                         <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -346,16 +344,16 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="Ytz-wA-kR6">
-                                                <rect key="frame" x="0.0" y="86" width="122" height="20.666666666666671"/>
+                                                <rect key="frame" x="0.0" y="87" width="122" height="21"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="population:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LyS-CA-hQK">
-                                                        <rect key="frame" x="0.0" y="0.0" width="97.333333333333329" height="20.666666666666668"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="97.5" height="21"/>
                                                         <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
                                                         <color key="textColor" red="1" green="0.80458714850000002" blue="0.47704318740000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lnY-qN-Wfh">
-                                                        <rect key="frame" x="106.33333333333334" y="0.0" width="15.666666666666671" height="20.666666666666668"/>
+                                                        <rect key="frame" x="106.5" y="0.0" width="15.5" height="21"/>
                                                         <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -374,7 +372,7 @@
                                 </constraints>
                             </view>
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="Zg2-wW-7wP">
-                                <rect key="frame" x="188.66666666666666" y="429.66666666666669" width="37" height="37"/>
+                                <rect key="frame" x="281.5" y="281.5" width="37" height="37"/>
                                 <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </activityIndicatorView>
                         </subviews>
@@ -412,14 +410,14 @@
             <objects>
                 <viewController storyboardIdentifier="FilmViewController" id="gx3-dv-WQt" customClass="FilmViewController" customModule="Star_Trivia" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5ht-yU-JSP">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="space4" translatesAutoresizingMaskIntoConstraints="NO" id="rHa-UD-zjf">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Jt-fF-W9o" customClass="FadeButtonAnimation" customModule="Star_Trivia" customModuleProvider="target">
-                                <rect key="frame" x="29" y="805" width="79" height="37"/>
+                                <rect key="frame" x="29" y="543" width="79" height="37"/>
                                 <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="20"/>
                                 <state key="normal" title="preview">
                                     <color key="titleColor" red="1" green="0.80458714850000002" blue="0.47704318740000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -431,28 +429,28 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Films" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ryU-4Q-4Ia">
-                                <rect key="frame" x="20" y="64" width="374" height="80"/>
+                                <rect key="frame" x="20" y="20" width="560" height="58.5"/>
                                 <fontDescription key="fontDescription" name="StarJediHollow" family="Star Jedi Hollow" pointSize="50"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sVQ-z5-LJ7" customClass="BlackBackgroundView" customModule="Star_Trivia" customModuleProvider="target">
-                                <rect key="frame" x="20" y="184" width="374" height="601"/>
+                                <rect key="frame" x="20" y="118.5" width="560" height="404.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="PuF-gZ-S7i">
-                                        <rect key="frame" x="20" y="20" width="334" height="135.33333333333334"/>
+                                        <rect key="frame" x="20" y="20" width="520" height="137"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="DzQ-si-kIu">
-                                                <rect key="frame" x="0.0" y="0.0" width="64.333333333333329" height="20.666666666666668"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="64.5" height="21"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="title:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dOe-tX-C0H">
-                                                        <rect key="frame" x="0.0" y="0.0" width="40.666666666666664" height="20.666666666666668"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="41" height="21"/>
                                                         <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
                                                         <color key="textColor" red="1" green="0.80458714850000002" blue="0.47704318740000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8HY-Dg-Ctb">
-                                                        <rect key="frame" x="48.666666666666671" y="0.0" width="15.666666666666671" height="20.666666666666668"/>
+                                                        <rect key="frame" x="49" y="0.0" width="15.5" height="21"/>
                                                         <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -460,16 +458,16 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="PYi-kG-zpI">
-                                                <rect key="frame" x="0.0" y="28.666666666666657" width="89" height="20.666666666666671"/>
+                                                <rect key="frame" x="0.0" y="29" width="89" height="21"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="episode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gwx-vI-yul">
-                                                        <rect key="frame" x="0.0" y="0.0" width="65.333333333333329" height="20.666666666666668"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="65.5" height="21"/>
                                                         <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
                                                         <color key="textColor" red="1" green="0.80458714850000002" blue="0.47704318740000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Q5-D0-hOj">
-                                                        <rect key="frame" x="73.333333333333329" y="0.0" width="15.666666666666671" height="20.666666666666668"/>
+                                                        <rect key="frame" x="73.5" y="0.0" width="15.5" height="21"/>
                                                         <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -477,16 +475,16 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="BbI-TL-6ox">
-                                                <rect key="frame" x="0.0" y="57.333333333333307" width="97.333333333333329" height="20.666666666666664"/>
+                                                <rect key="frame" x="0.0" y="58" width="97" height="21"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="director:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jht-jf-nKQ">
-                                                        <rect key="frame" x="0.0" y="0.0" width="73.666666666666671" height="20.666666666666668"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="73.5" height="21"/>
                                                         <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
                                                         <color key="textColor" red="1" green="0.80458714850000002" blue="0.47704318740000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="7Pl-yy-GqN">
-                                                        <rect key="frame" x="81.666666666666671" y="0.0" width="15.666666666666671" height="20.666666666666668"/>
+                                                        <rect key="frame" x="81.5" y="0.0" width="15.5" height="21"/>
                                                         <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -494,16 +492,16 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="zmm-GD-39g">
-                                                <rect key="frame" x="0.0" y="86" width="107.33333333333333" height="20.666666666666671"/>
+                                                <rect key="frame" x="0.0" y="87" width="107" height="21"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="producer:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x0s-s3-rZw">
-                                                        <rect key="frame" x="0.0" y="0.0" width="83.666666666666671" height="20.666666666666668"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="83.5" height="21"/>
                                                         <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
                                                         <color key="textColor" red="1" green="0.80458714850000002" blue="0.47704318740000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="c5W-FP-yrn">
-                                                        <rect key="frame" x="91.666666666666657" y="0.0" width="15.666666666666671" height="20.666666666666668"/>
+                                                        <rect key="frame" x="91.5" y="0.0" width="15.5" height="21"/>
                                                         <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -511,16 +509,16 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="FeB-w7-GuA">
-                                                <rect key="frame" x="0.0" y="114.66666666666669" width="103.66666666666667" height="20.666666666666657"/>
+                                                <rect key="frame" x="0.0" y="116" width="103.5" height="21"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="released:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jGl-Af-MLr">
-                                                        <rect key="frame" x="0.0" y="0.0" width="80" height="20.666666666666668"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="80" height="21"/>
                                                         <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
                                                         <color key="textColor" red="1" green="0.80458714850000002" blue="0.47704318740000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qWd-uq-V3Y">
-                                                        <rect key="frame" x="88" y="0.0" width="15.666666666666671" height="20.666666666666668"/>
+                                                        <rect key="frame" x="88" y="0.0" width="15.5" height="21"/>
                                                         <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -530,14 +528,14 @@
                                         </subviews>
                                     </stackView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TOa-6P-X7r">
-                                        <rect key="frame" x="20" y="175.33333333333329" width="334" height="405.66666666666674"/>
+                                        <rect key="frame" x="20" y="177" width="520" height="207.5"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="textColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="A45-80-Ubh">
-                                        <rect key="frame" x="168.66666666666666" y="282" width="37" height="37"/>
+                                        <rect key="frame" x="261.5" y="184" width="37" height="37"/>
                                         <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </activityIndicatorView>
                                 </subviews>
@@ -555,7 +553,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LSj-Uo-EVG" customClass="FadeButtonAnimation" customModule="Star_Trivia" customModuleProvider="target">
-                                <rect key="frame" x="349" y="805" width="45" height="37"/>
+                                <rect key="frame" x="535" y="543" width="45" height="37"/>
                                 <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="20"/>
                                 <state key="normal" title="next">
                                     <color key="titleColor" red="1" green="0.80458714850000002" blue="0.47704318740000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -609,35 +607,35 @@
             <objects>
                 <viewController storyboardIdentifier="VehicleViewController" id="iJ6-hH-Xvl" customClass="VehicleViewController" customModule="Star_Trivia" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pJz-GS-Vwt">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="space2" translatesAutoresizingMaskIntoConstraints="NO" id="Mol-Ny-awY">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vehicles" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="PwH-rL-xeW">
-                                <rect key="frame" x="20" y="64" width="374" height="80"/>
+                                <rect key="frame" x="20" y="20" width="560" height="58.5"/>
                                 <fontDescription key="fontDescription" name="StarJediHollow" family="Star Jedi Hollow" pointSize="50"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hSB-dt-NQb" customClass="BlackBackgroundView" customModule="Star_Trivia" customModuleProvider="target">
-                                <rect key="frame" x="20" y="308" width="374" height="280"/>
+                                <rect key="frame" x="20" y="160" width="560" height="280"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="uJC-Kk-Gfg">
-                                        <rect key="frame" x="20" y="29.333333333333329" width="334" height="221.33333333333337"/>
+                                        <rect key="frame" x="20" y="28" width="520" height="224"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="x99-jb-7gI">
-                                                <rect key="frame" x="0.0" y="0.0" width="79.333333333333329" height="20.666666666666668"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="79" height="21"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y2A-3w-WUi">
-                                                        <rect key="frame" x="0.0" y="0.0" width="55.666666666666664" height="20.666666666666668"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="55.5" height="21"/>
                                                         <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
                                                         <color key="textColor" red="1" green="0.80458714850000002" blue="0.47704318740000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hqH-hX-1IA">
-                                                        <rect key="frame" x="63.666666666666664" y="0.0" width="15.666666666666664" height="20.666666666666668"/>
+                                                        <rect key="frame" x="63.5" y="0.0" width="15.5" height="21"/>
                                                         <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -645,16 +643,16 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="CTm-0y-Tx5">
-                                                <rect key="frame" x="0.0" y="28.666666666666686" width="83.666666666666671" height="20.666666666666671"/>
+                                                <rect key="frame" x="0.0" y="29" width="83.5" height="21"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="model:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SLd-Wi-rIz">
-                                                        <rect key="frame" x="0.0" y="0.0" width="60" height="20.666666666666668"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="60" height="21"/>
                                                         <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
                                                         <color key="textColor" red="1" green="0.80458714850000002" blue="0.47704318740000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YbQ-UO-nSh">
-                                                        <rect key="frame" x="68" y="0.0" width="15.666666666666671" height="20.666666666666668"/>
+                                                        <rect key="frame" x="68" y="0.0" width="15.5" height="21"/>
                                                         <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -662,16 +660,16 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="r6Y-BC-eu0">
-                                                <rect key="frame" x="0.0" y="57.333333333333364" width="85" height="20.666666666666664"/>
+                                                <rect key="frame" x="0.0" y="58" width="85" height="21"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="lenght:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lY3-DE-9UV">
-                                                        <rect key="frame" x="0.0" y="0.0" width="61.333333333333336" height="20.666666666666668"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="61.5" height="21"/>
                                                         <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
                                                         <color key="textColor" red="1" green="0.80458714850000002" blue="0.47704318740000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P5e-lB-iad">
-                                                        <rect key="frame" x="69.333333333333329" y="0.0" width="15.666666666666671" height="20.666666666666668"/>
+                                                        <rect key="frame" x="69.5" y="0.0" width="15.5" height="21"/>
                                                         <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -679,16 +677,16 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="QGy-Pp-r1e">
-                                                <rect key="frame" x="0.0" y="86" width="147" height="20.666666666666671"/>
+                                                <rect key="frame" x="0.0" y="87" width="147" height="21"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="manufacturer:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CW2-Ly-Tfb">
-                                                        <rect key="frame" x="0.0" y="0.0" width="123.33333333333333" height="20.666666666666668"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="123.5" height="21"/>
                                                         <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
                                                         <color key="textColor" red="1" green="0.80458714850000002" blue="0.47704318740000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QPd-5D-IKz">
-                                                        <rect key="frame" x="131.33333333333334" y="0.0" width="15.666666666666657" height="20.666666666666668"/>
+                                                        <rect key="frame" x="131.5" y="0.0" width="15.5" height="21"/>
                                                         <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -696,16 +694,16 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="EVO-i5-aOe">
-                                                <rect key="frame" x="0.0" y="114.66666666666669" width="66.333333333333329" height="20.666666666666657"/>
+                                                <rect key="frame" x="0.0" y="116" width="66" height="21"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="cost:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wAG-YD-hnO">
-                                                        <rect key="frame" x="0.0" y="0.0" width="42.666666666666664" height="20.666666666666668"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="42.5" height="21"/>
                                                         <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
                                                         <color key="textColor" red="1" green="0.80458714850000002" blue="0.47704318740000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oaf-t3-LI6">
-                                                        <rect key="frame" x="50.666666666666671" y="0.0" width="15.666666666666671" height="20.666666666666668"/>
+                                                        <rect key="frame" x="50.5" y="0.0" width="15.5" height="21"/>
                                                         <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -713,16 +711,16 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="1jp-FA-WJQ">
-                                                <rect key="frame" x="0.0" y="143.33333333333337" width="82" height="20.666666666666657"/>
+                                                <rect key="frame" x="0.0" y="145" width="82" height="21"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="speed:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Vt-8A-CSk">
-                                                        <rect key="frame" x="0.0" y="0.0" width="58.333333333333336" height="20.666666666666668"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="58.5" height="21"/>
                                                         <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
                                                         <color key="textColor" red="1" green="0.80458714850000002" blue="0.47704318740000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XoN-c1-GSg">
-                                                        <rect key="frame" x="66.333333333333329" y="0.0" width="15.666666666666671" height="20.666666666666668"/>
+                                                        <rect key="frame" x="66.5" y="0.0" width="15.5" height="21"/>
                                                         <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -730,16 +728,16 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="K4o-p5-XHz">
-                                                <rect key="frame" x="0.0" y="172" width="71.666666666666671" height="20.666666666666657"/>
+                                                <rect key="frame" x="0.0" y="174" width="71.5" height="21"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="crew:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xkz-pI-lf8">
-                                                        <rect key="frame" x="0.0" y="0.0" width="48" height="20.666666666666668"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="48" height="21"/>
                                                         <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
                                                         <color key="textColor" red="1" green="0.80458714850000002" blue="0.47704318740000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3pq-Eu-DoJ">
-                                                        <rect key="frame" x="56" y="0.0" width="15.666666666666671" height="20.666666666666668"/>
+                                                        <rect key="frame" x="56" y="0.0" width="15.5" height="21"/>
                                                         <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -747,16 +745,16 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="7Bq-b1-5FI">
-                                                <rect key="frame" x="0.0" y="200.66666666666669" width="127.66666666666667" height="20.666666666666657"/>
+                                                <rect key="frame" x="0.0" y="203" width="127.5" height="21"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="passengers:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xTf-qC-RPh">
-                                                        <rect key="frame" x="0.0" y="0.0" width="104" height="20.666666666666668"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="104" height="21"/>
                                                         <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
                                                         <color key="textColor" red="1" green="0.80458714850000002" blue="0.47704318740000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qsv-gt-Pjs">
-                                                        <rect key="frame" x="112" y="0.0" width="15.666666666666671" height="20.666666666666668"/>
+                                                        <rect key="frame" x="112" y="0.0" width="15.5" height="21"/>
                                                         <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -775,7 +773,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Nw-Gt-NTr" customClass="FadeButtonAnimation" customModule="Star_Trivia" customModuleProvider="target">
-                                <rect key="frame" x="20" y="805" width="79" height="37"/>
+                                <rect key="frame" x="20" y="543" width="79" height="37"/>
                                 <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="20"/>
                                 <state key="normal" title="preview">
                                     <color key="titleColor" red="1" green="0.80458714850000002" blue="0.47704318740000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -785,7 +783,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S28-0C-D8i" customClass="FadeButtonAnimation" customModule="Star_Trivia" customModuleProvider="target">
-                                <rect key="frame" x="349" y="805" width="45" height="37"/>
+                                <rect key="frame" x="535" y="543" width="45" height="37"/>
                                 <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="20"/>
                                 <state key="normal" title="next">
                                     <color key="titleColor" red="1" green="0.80458714850000002" blue="0.47704318740000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -795,7 +793,7 @@
                                 </connections>
                             </button>
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="tOi-k4-aFo">
-                                <rect key="frame" x="188.66666666666666" y="429.66666666666669" width="37" height="37"/>
+                                <rect key="frame" x="281.5" y="281.5" width="37" height="37"/>
                                 <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </activityIndicatorView>
                         </subviews>
@@ -844,14 +842,14 @@
             <objects>
                 <viewController storyboardIdentifier="StarshipViewController" id="pHd-aT-dbM" customClass="StarshipViewController" customModule="Star_Trivia" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5Ra-9W-chK">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="space3" translatesAutoresizingMaskIntoConstraints="NO" id="SQZ-tM-Mzr">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RBd-sE-V5m" customClass="FadeButtonAnimation" customModule="Star_Trivia" customModuleProvider="target">
-                                <rect key="frame" x="20" y="805" width="79" height="37"/>
+                                <rect key="frame" x="20" y="543" width="79" height="37"/>
                                 <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="20"/>
                                 <state key="normal" title="preview">
                                     <color key="titleColor" red="1" green="0.80458714850000002" blue="0.47704318740000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -862,7 +860,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cr9-VG-BaA" customClass="FadeButtonAnimation" customModule="Star_Trivia" customModuleProvider="target">
-                                <rect key="frame" x="349" y="805" width="45" height="37"/>
+                                <rect key="frame" x="535" y="543" width="45" height="37"/>
                                 <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="20"/>
                                 <state key="normal" title="next">
                                     <color key="titleColor" red="1" green="0.80458714850000002" blue="0.47704318740000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -873,28 +871,28 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Starships" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="qJT-og-rth">
-                                <rect key="frame" x="20" y="64" width="374" height="80"/>
+                                <rect key="frame" x="20" y="20" width="560" height="58.5"/>
                                 <fontDescription key="fontDescription" name="StarJediHollow" family="Star Jedi Hollow" pointSize="50"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8XU-Jh-rcZ" customClass="BlackBackgroundView" customModule="Star_Trivia" customModuleProvider="target">
-                                <rect key="frame" x="20" y="308" width="374" height="280"/>
+                                <rect key="frame" x="20" y="160" width="560" height="280"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="EPX-mT-2p0">
-                                        <rect key="frame" x="20" y="29.333333333333329" width="334" height="221.33333333333337"/>
+                                        <rect key="frame" x="20" y="28" width="520" height="224"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="dze-lR-QZW">
-                                                <rect key="frame" x="0.0" y="0.0" width="79.333333333333329" height="20.666666666666668"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="79" height="21"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p0E-ZT-hKd">
-                                                        <rect key="frame" x="0.0" y="0.0" width="55.666666666666664" height="20.666666666666668"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="55.5" height="21"/>
                                                         <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
                                                         <color key="textColor" red="1" green="0.80458714850000002" blue="0.47704318740000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BGv-Vn-8bw">
-                                                        <rect key="frame" x="63.666666666666664" y="0.0" width="15.666666666666664" height="20.666666666666668"/>
+                                                        <rect key="frame" x="63.5" y="0.0" width="15.5" height="21"/>
                                                         <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -902,16 +900,16 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="epp-cO-qDF">
-                                                <rect key="frame" x="0.0" y="28.666666666666686" width="83.666666666666671" height="20.666666666666671"/>
+                                                <rect key="frame" x="0.0" y="29" width="83.5" height="21"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="model:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zQ3-Te-NTz">
-                                                        <rect key="frame" x="0.0" y="0.0" width="60" height="20.666666666666668"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="60" height="21"/>
                                                         <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
                                                         <color key="textColor" red="1" green="0.80458714850000002" blue="0.47704318740000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="N9e-Jg-Bvs">
-                                                        <rect key="frame" x="68" y="0.0" width="15.666666666666671" height="20.666666666666668"/>
+                                                        <rect key="frame" x="68" y="0.0" width="15.5" height="21"/>
                                                         <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -919,16 +917,16 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="zqk-Yg-1e6">
-                                                <rect key="frame" x="0.0" y="57.333333333333364" width="85" height="20.666666666666664"/>
+                                                <rect key="frame" x="0.0" y="58" width="85" height="21"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="lenght:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AKf-9n-YnS">
-                                                        <rect key="frame" x="0.0" y="0.0" width="61.333333333333336" height="20.666666666666668"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="61.5" height="21"/>
                                                         <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
                                                         <color key="textColor" red="1" green="0.80458714850000002" blue="0.47704318740000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pp6-Ux-A1B">
-                                                        <rect key="frame" x="69.333333333333329" y="0.0" width="15.666666666666671" height="20.666666666666668"/>
+                                                        <rect key="frame" x="69.5" y="0.0" width="15.5" height="21"/>
                                                         <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -936,16 +934,16 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Us4-u6-z7n">
-                                                <rect key="frame" x="0.0" y="86" width="147" height="20.666666666666671"/>
+                                                <rect key="frame" x="0.0" y="87" width="147" height="21"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="manufacturer:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q6i-ip-f0q">
-                                                        <rect key="frame" x="0.0" y="0.0" width="123.33333333333333" height="20.666666666666668"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="123.5" height="21"/>
                                                         <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
                                                         <color key="textColor" red="1" green="0.80458714850000002" blue="0.47704318740000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="XRl-Xw-ogi">
-                                                        <rect key="frame" x="131.33333333333334" y="0.0" width="15.666666666666657" height="20.666666666666668"/>
+                                                        <rect key="frame" x="131.5" y="0.0" width="15.5" height="21"/>
                                                         <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -953,16 +951,16 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="dQK-7A-iYv">
-                                                <rect key="frame" x="0.0" y="114.66666666666669" width="66.333333333333329" height="20.666666666666657"/>
+                                                <rect key="frame" x="0.0" y="116" width="66" height="21"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="cost:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="15X-Wp-md2">
-                                                        <rect key="frame" x="0.0" y="0.0" width="42.666666666666664" height="20.666666666666668"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="42.5" height="21"/>
                                                         <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
                                                         <color key="textColor" red="1" green="0.80458714850000002" blue="0.47704318740000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Et2-PY-MGg">
-                                                        <rect key="frame" x="50.666666666666671" y="0.0" width="15.666666666666671" height="20.666666666666668"/>
+                                                        <rect key="frame" x="50.5" y="0.0" width="15.5" height="21"/>
                                                         <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -970,16 +968,16 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="OiO-GQ-vAZ">
-                                                <rect key="frame" x="0.0" y="143.33333333333337" width="82" height="20.666666666666657"/>
+                                                <rect key="frame" x="0.0" y="145" width="82" height="21"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="speed:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k4c-Iq-AEP">
-                                                        <rect key="frame" x="0.0" y="0.0" width="58.333333333333336" height="20.666666666666668"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="58.5" height="21"/>
                                                         <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
                                                         <color key="textColor" red="1" green="0.80458714850000002" blue="0.47704318740000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4uC-Jw-TgW">
-                                                        <rect key="frame" x="66.333333333333329" y="0.0" width="15.666666666666671" height="20.666666666666668"/>
+                                                        <rect key="frame" x="66.5" y="0.0" width="15.5" height="21"/>
                                                         <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -987,16 +985,16 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="XWb-9f-ZId">
-                                                <rect key="frame" x="0.0" y="172" width="71.666666666666671" height="20.666666666666657"/>
+                                                <rect key="frame" x="0.0" y="174" width="71.5" height="21"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="crew:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pte-bp-kXs">
-                                                        <rect key="frame" x="0.0" y="0.0" width="48" height="20.666666666666668"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="48" height="21"/>
                                                         <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
                                                         <color key="textColor" red="1" green="0.80458714850000002" blue="0.47704318740000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V6v-iR-I7h">
-                                                        <rect key="frame" x="56" y="0.0" width="15.666666666666671" height="20.666666666666668"/>
+                                                        <rect key="frame" x="56" y="0.0" width="15.5" height="21"/>
                                                         <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -1004,16 +1002,16 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="lYg-Da-qhT">
-                                                <rect key="frame" x="0.0" y="200.66666666666669" width="127.66666666666667" height="20.666666666666657"/>
+                                                <rect key="frame" x="0.0" y="203" width="127.5" height="21"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="passengers:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GJy-d2-BTS">
-                                                        <rect key="frame" x="0.0" y="0.0" width="104" height="20.666666666666668"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="104" height="21"/>
                                                         <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
                                                         <color key="textColor" red="1" green="0.80458714850000002" blue="0.47704318740000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hh1-gK-cNA">
-                                                        <rect key="frame" x="112" y="0.0" width="15.666666666666671" height="20.666666666666668"/>
+                                                        <rect key="frame" x="112" y="0.0" width="15.5" height="21"/>
                                                         <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -1032,7 +1030,7 @@
                                 </constraints>
                             </view>
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="hWx-DI-UJv">
-                                <rect key="frame" x="188.66666666666666" y="429.66666666666669" width="37" height="37"/>
+                                <rect key="frame" x="281.5" y="281.5" width="37" height="37"/>
                                 <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </activityIndicatorView>
                         </subviews>

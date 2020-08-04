@@ -26,7 +26,7 @@ class StarshipViewController: UIViewController, PersonProtocol, Storyboarded {
     @IBOutlet weak var nextButtonLabel: FadeButtonAnimation!
     
     
-    var personProtocol: Person?
+    var person: Person?
     let api = StarshipAPI()
     var currentStarship = 0
     var starshipsArray = [String]()
@@ -43,7 +43,7 @@ class StarshipViewController: UIViewController, PersonProtocol, Storyboarded {
     }
     
     private func checkFirstStarship() {
-        starshipsArray = personProtocol?.starshipUrl ?? []
+        starshipsArray = person?.starshipUrl ?? []
         nextButtonLabel.isEnabled = starshipsArray.count > 1
         previewButtonLabel.isEnabled = false
         

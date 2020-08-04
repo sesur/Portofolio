@@ -9,19 +9,11 @@
 import UIKit
 
 protocol PersonProtocol {
-    var personProtocol: Person? {get set}
+    var person: Person? { get set }
 }
 
 
-class HomeController: UIViewController, PersonProtocol, Storyboarded  {
-    
-    weak var coordintor: MainCoordinator?
-    
-    var homeAction: ((Person?) -> Void)?
-    var vehicleAction: ((Person?) -> Void)?
-    var starshipAction: ((Person?) -> Void)?
-    var filmAction: ((Person?) -> Void)?
-    
+class HomeController: UIViewController, PersonProtocol, Storyboarded {
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var height: UILabel!
     @IBOutlet weak var mass: UILabel!
@@ -31,31 +23,93 @@ class HomeController: UIViewController, PersonProtocol, Storyboarded  {
     @IBOutlet weak var spinner: UIActivityIndicatorView!
     
     //Buttons Label
-    @IBOutlet weak var homeworldButtonLabel: UIButton!
-    @IBOutlet weak var vehiclesButtonLabel: UIButton!
-    @IBOutlet weak var starshipsButtonLabel: UIButton!
-    @IBOutlet weak var filmsButtonLabel: UIButton!
-    
+    @IBOutlet weak var homeWorldLabel: UIButton!
+    @IBOutlet weak var vehiclesLabel: UIButton!
+    @IBOutlet weak var starshipsLabel: UIButton!
+    @IBOutlet weak var filmsLabel: UIButton!
     
     var personAPI = PersonAPI()
-    var personProtocol: Person?
+    var person: Person?
+    weak var coordinator: MainCoordinator?
+    
+    var navigateHome: ((Person?) -> Void)?
+    var navigateToVehicle: ((Person?) -> Void)?
+    var navigateToStarship: ((Person?) -> Void)?
+    var navigateToFilms: ((Person?) -> Void)?
     
     //MARK: Life Cicle
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
-        randomPerson()
+        generateRandomPerson()
     }
-    
     
     //MARK: Events
-    @IBAction func randomButtonPressed(_ sender: Any) {
-        randomPerson()
+    @IBAction func pressRandomButton(_ sender: Any) {
+        generateRandomPerson()
     }
-   
-    private func animate(_ button: UIButton?) {
+    
+    private func startSpinning() {
+        spinner.startAnimating()
+    }
+    
+    private func stopSpinning() {
+        self.spinner.stopAnimating()
+    }
+    
+    private func generateRandomPerson() {
+        startSpinning()
+        personAPI.parseRandom(url: getRandomNumber()) { (result) in
+            switch result {
+            case .success(let person): self.update(person)
+            case .failure(let error): print(error.localizedDescription)
+            }
+        }
+    }
+    
+    private func getRandomNumber() -> String {
+        return String(Int.random(in: 1 ... 87))
+    }
+    
+    private func update(_ person: Person?) {
+        stopSpinning()
+        guard let person = person else { return }
+        self.person = person
+        updateFields(person)
+        updateButtons(person)
+    }
+    
+    private func updateFields(_ person: Person?) {
+        guard let person = person else { return }
+        name.text = person.name
+        height.text = person.height
+        mass.text  = person.mass
+        hair.text = person.hair
+        birthYear.text = person.birthYear
+        gender.text = person.gender
+    }
+    
+    private func updateButtons(_ person: Person) {
+        homeWorldLabel.isEnabled = !person.homeWorld.isEmpty
+        starshipsLabel.isEnabled = !person.starshipUrl.isEmpty
+        vehiclesLabel.isEnabled = !person.vehicleUrls.isEmpty
+        filmsLabel.isEnabled = !person.filmUrls.isEmpty
+        
+        animate([homeWorldLabel, starshipsLabel, vehiclesLabel, filmsLabel])
+    }
+    
+    private func animate(_ button: [UIButton]) {
+        button.forEach {
+            if $0.isEnabled == true {
+                self.transformAffine($0)
+            }
+        }
+    }
+    
+    private func transformAffine(_ button: UIButton?) {
         UIView.animate(withDuration: 0.3, delay: 0.5, options: .curveEaseInOut, animations: {
             button?.transform = CGAffineTransform(scaleX: 1.2, y: 1.2)
         }) { _ in
@@ -63,58 +117,21 @@ class HomeController: UIViewController, PersonProtocol, Storyboarded  {
         }
     }
     
-    private func randomPerson() {
-        spinner.startAnimating()
-        personAPI.getRandomPerson(url: generateRandomNumber()) { (result) in
-            switch result {
-            case .success(let person): self.setupViews(person: person)
-            case .failure(let error): print(error.localizedDescription)
-            }
-        }
+    
+    
+    @IBAction func pressHomeWorldButton(_ sender: Any) {
+        navigateHome?(person)
+    }
+    @IBAction func pressVehicleButton(_ sender: Any) {
+        navigateToVehicle?(person)
+    }
+    @IBAction func pressStarshipButton(_ sender: Any) {
+        navigateToStarship?(person)
+    }
+    @IBAction func pressFilmsButton(_ sender: Any) {
+        navigateToFilms?(person)
     }
     
-    private func generateRandomNumber() -> String {
-        return String(Int.random(in: 1 ... 87))
-    }
-    
-    private func setupViews(person: Person?) {
-        self.spinner.stopAnimating()
-        
-        guard let person = person else {return }
-        name.text = person.name
-        height.text = person.height
-        mass.text  = person.mass
-        hair.text = person.hair
-        birthYear.text = person.birthYear
-        gender.text = person.gender
-        
-        
-        homeworldButtonLabel.isEnabled = !person.homeWorld.isEmpty
-        starshipsButtonLabel.isEnabled = !person.starshipUrl.isEmpty
-        vehiclesButtonLabel.isEnabled = !person.vehicleUrls.isEmpty
-        filmsButtonLabel.isEnabled = !person.filmUrls.isEmpty
-        
-        self.personProtocol = person
-        
-        [homeworldButtonLabel, starshipsButtonLabel, vehiclesButtonLabel, filmsButtonLabel].forEach {
-            if $0?.isEnabled == true {
-                self.animate($0)
-            }
-        }
-    }
-    
-    @IBAction func homeworldButtonPressed(_ sender: Any) {
-        homeAction?(personProtocol)
-    }
-    @IBAction func vehicleButtonPressed(_ sender: Any) {
-        vehicleAction?(personProtocol)
-    }
-    @IBAction func starshipButtonPressed(_ sender: Any) {
-        starshipAction?(personProtocol)
-    }
-    @IBAction func filmsButtonPressed(_ sender: Any) {
-        filmAction?(personProtocol)
-    }
     
     
 }
