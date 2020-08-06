@@ -18,7 +18,7 @@ struct Person: Codable {
     let homeWorld: String
     let filmUrls: [String]
     let vehicleUrls: [String]
-    let starshipUrl: [String]
+    let starshipUrls: [String]
     
     enum CodingKeys: String, CodingKey {
         case name
@@ -30,7 +30,7 @@ struct Person: Codable {
         case homeWorld = "homeworld"
         case filmUrls = "films"
         case vehicleUrls = "vehicles"
-        case starshipUrl = "starships"
+        case starshipUrls = "starships"
     }
 }
 

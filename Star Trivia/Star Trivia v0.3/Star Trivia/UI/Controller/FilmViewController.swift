@@ -12,14 +12,14 @@ class FilmViewController: UIViewController, PersonProtocol, Storyboarded {
     
     weak var coordinator: MainCoordinator?
     
-    @IBOutlet weak var previewButtonLabel: FadeButtonAnimation!
-    @IBOutlet weak var nextButtonLabel: FadeButtonAnimation!
-    @IBOutlet weak var releasedLabel: UILabel!
-    @IBOutlet weak var producerLabel: UILabel!
-    @IBOutlet weak var directorLabel: UILabel!
-    @IBOutlet weak var episodeLabel: UILabel!
-    @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var crowlTextViewLabel: UITextView!
+    @IBOutlet weak var previewFilm: FadeButtonAnimation!
+    @IBOutlet weak var nextFilm: FadeButtonAnimation!
+    @IBOutlet weak var released: UILabel!
+    @IBOutlet weak var producer: UILabel!
+    @IBOutlet weak var director: UILabel!
+    @IBOutlet weak var episode: UILabel!
+    @IBOutlet weak var filmTitle: UILabel!
+    @IBOutlet weak var crowl: UITextView!
     @IBOutlet weak var spinner: UIActivityIndicatorView!
     
     
@@ -32,52 +32,52 @@ class FilmViewController: UIViewController, PersonProtocol, Storyboarded {
     override func viewDidLoad() {
         super.viewDidLoad()
         filmsArray = person?.filmUrls ?? []
-        nextButtonLabel.isEnabled = filmsArray.count > 1
-        previewButtonLabel.isEnabled = false
+        nextFilm.isEnabled = filmsArray.count > 1
+        previewFilm.isEnabled = false
         
         spinner.startAnimating()
         guard let firstFilm = filmsArray.first else {return}
-        getFilms(url: firstFilm)
+        fetchFilmsFrom(url: firstFilm)
         
     }
     
-    private func getFilms(url: String){
+    private func fetchFilmsFrom(url: String){
         spinner.startAnimating()
         api.getFilm(url: url) { (result) in
             switch result {
-            case .success(let film): self.setupViews(film: film)
+            case .success(let film): self.updateDetailsFor(film)
             case .failure(let error): print(error.localizedDescription)
             }
         }
     }
     
-    private func setupViews(film: Film?){
+    private func updateDetailsFor(_ film: Film?){
         spinner.stopAnimating()
         
         guard let film = film else {return}
-        titleLabel.text = film.title
-        producerLabel.text = film.producer
-        directorLabel.text = film.producer
-        episodeLabel.text = String(film.episode)
-        releasedLabel.text = film.releaseDate
+        filmTitle.text = film.title
+        producer.text = film.producer
+        director.text = film.producer
+        episode.text = String(film.episode)
+        released.text = film.releaseDate
         let stripped = film.crawl.replacingOccurrences(of: "\n", with: " ")
-        crowlTextViewLabel.text = stripped.replacingOccurrences(of: "\r", with: "") 
+        crowl.text = stripped.replacingOccurrences(of: "\r", with: "") 
     }
     
-    @IBAction func previewButtonPressed(_ sender: Any) {
+    @IBAction func pressPreviewButton(_ sender: Any) {
         currentFilm -= 1
         setupButtons()
     }
     
-    @IBAction func nextButtonPressed(_ sender: Any) {
+    @IBAction func pressNextButton(_ sender: Any) {
         currentFilm += 1
         setupButtons()
     }
     
     private func setupButtons() {
-        nextButtonLabel.isEnabled = currentFilm == filmsArray.count - 1 ? false : true
-        previewButtonLabel.isEnabled = currentFilm == 0 ? false: true
-        getFilms(url: filmsArray[currentFilm])
+        nextFilm.isEnabled = currentFilm == filmsArray.count - 1 ? false : true
+        previewFilm.isEnabled = currentFilm == 0 ? false: true
+        fetchFilmsFrom(url: filmsArray[currentFilm])
     }
     
     

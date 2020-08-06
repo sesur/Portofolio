@@ -269,10 +269,10 @@
             </objects>
             <point key="canvasLocation" x="1248" y="85"/>
         </scene>
-        <!--Homewold View Controller-->
+        <!--Homeworld View Controller-->
         <scene sceneID="9Vv-LN-Dkp">
             <objects>
-                <viewController storyboardIdentifier="HomewoldViewController" id="fXP-yy-qhx" customClass="HomewoldViewController" customModule="Star_Trivia" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomewoldViewController" id="fXP-yy-qhx" customClass="HomeworldViewController" customModule="Star_Trivia" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aGm-Ib-QMr">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -423,9 +423,9 @@
                                     <color key="titleColor" red="1" green="0.80458714850000002" blue="0.47704318740000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="previewButtonPressed:" destination="gx3-dv-WQt" eventType="touchUpInside" id="2FI-po-xIW"/>
+                                    <action selector="pressPreviewButton:" destination="gx3-dv-WQt" eventType="touchUpInside" id="2FI-po-xIW"/>
+                                    <action selector="pressPreviewButton:" destination="iJ6-hH-Xvl" eventType="touchUpInside" id="TCh-tm-Arl"/>
                                     <action selector="previewButtonPressed:" destination="pHd-aT-dbM" eventType="touchUpInside" id="LOv-b3-p26"/>
-                                    <action selector="previewButtonPressed:" destination="iJ6-hH-Xvl" eventType="touchUpInside" id="TCh-tm-Arl"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Films" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ryU-4Q-4Ia">
@@ -560,8 +560,8 @@
                                 </state>
                                 <connections>
                                     <action selector="nextButtonPressed:" destination="pHd-aT-dbM" eventType="touchUpInside" id="Zrr-67-odh"/>
-                                    <action selector="nextButtonPressed:" destination="gx3-dv-WQt" eventType="touchUpInside" id="gjJ-Jb-qAL"/>
-                                    <action selector="nextButtonPressed:" destination="iJ6-hH-Xvl" eventType="touchUpInside" id="yBx-W2-Mab"/>
+                                    <action selector="pressNextButton:" destination="gx3-dv-WQt" eventType="touchUpInside" id="gjJ-Jb-qAL"/>
+                                    <action selector="pressNextButton:" destination="iJ6-hH-Xvl" eventType="touchUpInside" id="yBx-W2-Mab"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -587,15 +587,15 @@
                         <viewLayoutGuide key="safeArea" id="NsJ-XA-uo4"/>
                     </view>
                     <connections>
-                        <outlet property="crowlTextViewLabel" destination="TOa-6P-X7r" id="9LE-VG-asd"/>
-                        <outlet property="directorLabel" destination="7Pl-yy-GqN" id="XNp-yX-eXs"/>
-                        <outlet property="episodeLabel" destination="4Q5-D0-hOj" id="a33-G5-XBk"/>
-                        <outlet property="nextButtonLabel" destination="LSj-Uo-EVG" id="NmW-Ng-tJ5"/>
-                        <outlet property="previewButtonLabel" destination="0Jt-fF-W9o" id="zO7-Bh-8NW"/>
-                        <outlet property="producerLabel" destination="c5W-FP-yrn" id="5tD-57-57R"/>
-                        <outlet property="releasedLabel" destination="qWd-uq-V3Y" id="VuJ-id-AOz"/>
+                        <outlet property="crowl" destination="TOa-6P-X7r" id="9LE-VG-asd"/>
+                        <outlet property="director" destination="7Pl-yy-GqN" id="XNp-yX-eXs"/>
+                        <outlet property="episode" destination="4Q5-D0-hOj" id="a33-G5-XBk"/>
+                        <outlet property="filmTitle" destination="8HY-Dg-Ctb" id="5Mb-Mq-q4X"/>
+                        <outlet property="nextFilm" destination="LSj-Uo-EVG" id="NmW-Ng-tJ5"/>
+                        <outlet property="previewFilm" destination="0Jt-fF-W9o" id="zO7-Bh-8NW"/>
+                        <outlet property="producer" destination="c5W-FP-yrn" id="5tD-57-57R"/>
+                        <outlet property="released" destination="qWd-uq-V3Y" id="VuJ-id-AOz"/>
                         <outlet property="spinner" destination="A45-80-Ubh" id="z4Z-yN-HSC"/>
-                        <outlet property="titleLabel" destination="8HY-Dg-Ctb" id="5Mb-Mq-q4X"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kci-cB-Q1L" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -779,7 +779,7 @@
                                     <color key="titleColor" red="1" green="0.80458714850000002" blue="0.47704318740000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="previewButtonPressed:" destination="iJ6-hH-Xvl" eventType="touchUpInside" id="A6K-An-88H"/>
+                                    <action selector="pressPreviewButton:" destination="iJ6-hH-Xvl" eventType="touchUpInside" id="A6K-An-88H"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S28-0C-D8i" customClass="FadeButtonAnimation" customModule="Star_Trivia" customModuleProvider="target">
@@ -789,7 +789,7 @@
                                     <color key="titleColor" red="1" green="0.80458714850000002" blue="0.47704318740000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="nextButtonPressed:" destination="iJ6-hH-Xvl" eventType="touchUpInside" id="gxv-AI-F6a"/>
+                                    <action selector="pressNextButton:" destination="iJ6-hH-Xvl" eventType="touchUpInside" id="gxv-AI-F6a"/>
                                 </connections>
                             </button>
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="tOi-k4-aFo">
@@ -820,16 +820,16 @@
                         <viewLayoutGuide key="safeArea" id="r9m-Sh-HLH"/>
                     </view>
                     <connections>
-                        <outlet property="costLabel" destination="Oaf-t3-LI6" id="4Iu-nQ-wl0"/>
-                        <outlet property="crewLabel" destination="3pq-Eu-DoJ" id="j0f-BF-SNE"/>
-                        <outlet property="lenghtLabel" destination="P5e-lB-iad" id="13d-vD-xV0"/>
-                        <outlet property="makerLabel" destination="QPd-5D-IKz" id="PGQ-qN-ZSF"/>
-                        <outlet property="modelLabel" destination="YbQ-UO-nSh" id="uL3-wd-WDu"/>
-                        <outlet property="nameLabel" destination="hqH-hX-1IA" id="zjj-ee-8fA"/>
-                        <outlet property="nextButtonLabel" destination="S28-0C-D8i" id="kM0-CP-gqZ"/>
-                        <outlet property="passangerLabel" destination="Qsv-gt-Pjs" id="Shk-cA-pqT"/>
-                        <outlet property="previwButtonLabel" destination="8Nw-Gt-NTr" id="FKQ-fA-DxD"/>
-                        <outlet property="speedLabel" destination="XoN-c1-GSg" id="sVJ-UJ-reN"/>
+                        <outlet property="cost" destination="Oaf-t3-LI6" id="4Iu-nQ-wl0"/>
+                        <outlet property="crew" destination="3pq-Eu-DoJ" id="j0f-BF-SNE"/>
+                        <outlet property="length" destination="P5e-lB-iad" id="13d-vD-xV0"/>
+                        <outlet property="maker" destination="QPd-5D-IKz" id="PGQ-qN-ZSF"/>
+                        <outlet property="model" destination="YbQ-UO-nSh" id="uL3-wd-WDu"/>
+                        <outlet property="name" destination="hqH-hX-1IA" id="zjj-ee-8fA"/>
+                        <outlet property="nextButton" destination="S28-0C-D8i" id="kM0-CP-gqZ"/>
+                        <outlet property="passenger" destination="Qsv-gt-Pjs" id="Shk-cA-pqT"/>
+                        <outlet property="previewButton" destination="8Nw-Gt-NTr" id="FKQ-fA-DxD"/>
+                        <outlet property="speed" destination="XoN-c1-GSg" id="sVJ-UJ-reN"/>
                         <outlet property="spinner" destination="tOi-k4-aFo" id="t8r-sx-i3v"/>
                     </connections>
                 </viewController>
@@ -855,8 +855,8 @@
                                     <color key="titleColor" red="1" green="0.80458714850000002" blue="0.47704318740000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="pressPreviewButton:" destination="iJ6-hH-Xvl" eventType="touchUpInside" id="uBE-j1-uMG"/>
                                     <action selector="previewButtonPressed:" destination="pHd-aT-dbM" eventType="touchUpInside" id="mr7-eJ-YsL"/>
-                                    <action selector="previewButtonPressed:" destination="iJ6-hH-Xvl" eventType="touchUpInside" id="uBE-j1-uMG"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cr9-VG-BaA" customClass="FadeButtonAnimation" customModule="Star_Trivia" customModuleProvider="target">
@@ -866,8 +866,8 @@
                                     <color key="titleColor" red="1" green="0.80458714850000002" blue="0.47704318740000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="nextButtonPressed:" destination="iJ6-hH-Xvl" eventType="touchUpInside" id="Zd5-Sk-92Y"/>
                                     <action selector="nextButtonPressed:" destination="pHd-aT-dbM" eventType="touchUpInside" id="tWO-rb-gxU"/>
+                                    <action selector="pressNextButton:" destination="iJ6-hH-Xvl" eventType="touchUpInside" id="Zd5-Sk-92Y"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Starships" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="qJT-og-rth">
@@ -1057,16 +1057,16 @@
                         <viewLayoutGuide key="safeArea" id="6Ya-ex-bZ7"/>
                     </view>
                     <connections>
-                        <outlet property="costLabel" destination="Et2-PY-MGg" id="1QB-vL-AIF"/>
-                        <outlet property="crewLabel" destination="V6v-iR-I7h" id="GXg-bz-1Cy"/>
-                        <outlet property="lenghtLabel" destination="pp6-Ux-A1B" id="pp8-Wk-S7W"/>
-                        <outlet property="makerLabel" destination="XRl-Xw-ogi" id="tAs-io-aX0"/>
+                        <outlet property="cost" destination="Et2-PY-MGg" id="1QB-vL-AIF"/>
+                        <outlet property="crew" destination="V6v-iR-I7h" id="GXg-bz-1Cy"/>
+                        <outlet property="length" destination="pp6-Ux-A1B" id="pp8-Wk-S7W"/>
+                        <outlet property="maker" destination="XRl-Xw-ogi" id="tAs-io-aX0"/>
                         <outlet property="model" destination="N9e-Jg-Bvs" id="F4V-Ds-Q7f"/>
                         <outlet property="name" destination="BGv-Vn-8bw" id="2HV-Mj-Ekc"/>
                         <outlet property="nextButtonLabel" destination="Cr9-VG-BaA" id="oyn-Au-4Md"/>
-                        <outlet property="passangersLabel" destination="Hh1-gK-cNA" id="c0F-aP-JFE"/>
-                        <outlet property="previewButtonLabel" destination="RBd-sE-V5m" id="cyn-Ss-1N2"/>
-                        <outlet property="speedLabel" destination="4uC-Jw-TgW" id="D82-tm-lLW"/>
+                        <outlet property="passengers" destination="Hh1-gK-cNA" id="c0F-aP-JFE"/>
+                        <outlet property="previewLabel" destination="RBd-sE-V5m" id="cyn-Ss-1N2"/>
+                        <outlet property="speed" destination="4uC-Jw-TgW" id="D82-tm-lLW"/>
                         <outlet property="spinner" destination="hWx-DI-UJv" id="6nz-8Z-AFH"/>
                     </connections>
                 </viewController>

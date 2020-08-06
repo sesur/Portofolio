@@ -20,7 +20,7 @@ class MainCoordinator: NSObject, Coordinator, UINavigationControllerDelegate {
     func start() {
         navigationController.delegate = self
         let homeController = HomeController.instantiate()
-        homeController.navigateToVehicle = { [weak self] person in
+        homeController.navigateHome = { [weak self] person in
             self?.showHomeWorldController(person)
         }
         
@@ -37,7 +37,7 @@ class MainCoordinator: NSObject, Coordinator, UINavigationControllerDelegate {
         navigationController.pushViewController(homeController, animated: true)
     }
     func showHomeWorldController(_ person: Person?) {
-        let homewolrdController = HomewoldViewController.instantiate()
+        let homewolrdController = HomeworldViewController.instantiate()
         homewolrdController.person = person
         navigationController.pushViewController(homewolrdController, animated: true)
     }

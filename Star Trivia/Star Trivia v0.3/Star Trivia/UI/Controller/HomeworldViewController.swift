@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HomewoldViewController: UIViewController, PersonProtocol, Storyboarded {
+class HomeworldViewController: UIViewController, PersonProtocol, Storyboarded {
     
     weak var coordinator: MainCoordinator?
     
@@ -24,20 +24,20 @@ class HomewoldViewController: UIViewController, PersonProtocol, Storyboarded {
     override func viewDidLoad() {
         super.viewDidLoad()
         spinner.startAnimating()
-        downloadHomeworldPerson()
+        fetchHomeWorldPerson()
     }
     
-    private func downloadHomeworldPerson() {
+    private func fetchHomeWorldPerson() {
         guard let url = person?.homeWorld else {return}
         api.getHomeworldPerson(url: url) { (result) in
             switch result {
-            case .success(let person): self.setupViews(person)
+            case .success(let person): self.updateDetailsOf(person)
             case .failure(let error): print(error.localizedDescription)
             }
         }
     }
     
-    private func setupViews(_ person: HomeworldPerson?) {
+    private func updateDetailsOf(_ person: HomeworldPerson?) {
         spinner.stopAnimating()
         guard let person = person else {return}
         name.text = person.name

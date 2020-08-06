@@ -9,20 +9,20 @@
 import UIKit
 
 class VehicleViewController: UIViewController, PersonProtocol, Storyboarded {
-   
+    
     weak var coordinator: MainCoordinator?
     var person: Person?
     
-    @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var modelLabel: UILabel!
-    @IBOutlet weak var lenghtLabel: UILabel!
-    @IBOutlet weak var makerLabel: UILabel!
-    @IBOutlet weak var costLabel: UILabel!
-    @IBOutlet weak var speedLabel: UILabel!
-    @IBOutlet weak var crewLabel: UILabel!
-    @IBOutlet weak var passangerLabel: UILabel!
-    @IBOutlet weak var previwButtonLabel: UIButton!
-    @IBOutlet weak var nextButtonLabel: UIButton!
+    @IBOutlet weak var name: UILabel!
+    @IBOutlet weak var model: UILabel!
+    @IBOutlet weak var length: UILabel!
+    @IBOutlet weak var maker: UILabel!
+    @IBOutlet weak var cost: UILabel!
+    @IBOutlet weak var speed: UILabel!
+    @IBOutlet weak var crew: UILabel!
+    @IBOutlet weak var passenger: UILabel!
+    @IBOutlet weak var previewButton: UIButton!
+    @IBOutlet weak var nextButton: UIButton!
     @IBOutlet weak var spinner: UIActivityIndicatorView!
     
     let api = VehicleAPI()
@@ -31,56 +31,60 @@ class VehicleViewController: UIViewController, PersonProtocol, Storyboarded {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        checkvehiclesInArray()
+        setupNextAndPreviewButtons()
     }
     
-    private func checkvehiclesInArray() {
-        vehiclesArray = person?.vehicleUrls ?? []
-        nextButtonLabel.isEnabled = vehiclesArray.count > 1
-        previwButtonLabel.isEnabled = false
+    fileprivate func vehicleUrls() -> [String]  {
+        return person?.vehicleUrls ?? []
+    }
+    
+    private func setupNextAndPreviewButtons() {
+        vehiclesArray = vehicleUrls()
+        nextButton.isEnabled = vehiclesArray.count > 1
+        previewButton.isEnabled = false
         
         guard let firstVehicleUrl = vehiclesArray.first else {return}
-        downloadVehicle(url: firstVehicleUrl)
+        fetchVehicle(from: firstVehicleUrl)
     }
     
-    private func downloadVehicle(url: String ) {
+    private func fetchVehicle(from url: String ) {
         spinner.startAnimating()
         api.getVehicle(url: url) { (result) in
             switch result {
-            case .success(let vehicle): self.setupViews(vehicle)
+            case .success(let vehicle): self.updateDetailsOf(vehicle)
             case .failure(let error): print(error.localizedDescription)
             }
         }
     }
     
-    private func setupViews(_ vehicle: Vehicle?) {
+    private func updateDetailsOf(_ vehicle: Vehicle?) {
         spinner.stopAnimating()
         
         guard let vehicle = vehicle else {return}
-        nameLabel.text = vehicle.name
-        modelLabel.text = vehicle.model
-        lenghtLabel.text = vehicle.length
-        makerLabel.text = vehicle.manufacturer
-        costLabel.text = vehicle.cost
-        speedLabel.text = vehicle.speed
-        crewLabel.text  = vehicle.crew
-        passangerLabel.text = vehicle.passengers
+        name.text = vehicle.name
+        model.text = vehicle.model
+        length.text = vehicle.length
+        maker.text = vehicle.manufacturer
+        cost.text = vehicle.cost
+        speed.text = vehicle.speed
+        crew.text  = vehicle.crew
+        passenger.text = vehicle.passengers
     }
     
-    @IBAction func previewButtonPressed(_ sender: Any) {
+    @IBAction func pressPreviewButton(_ sender: Any) {
         currentVehicle -= 1
-        setupButton()
+        updatePreviewAndNextButton()
     }
     
-    @IBAction func nextButtonPressed(_ sender: Any) {
+    @IBAction func pressNextButton(_ sender: Any) {
         currentVehicle += 1
-        setupButton()
+        updatePreviewAndNextButton()
     }
     
-    private func setupButton() {
-        nextButtonLabel.isEnabled = currentVehicle == vehiclesArray.count - 1 ? false : true
-        previwButtonLabel.isEnabled = currentVehicle == 0 ? false : true
-        downloadVehicle(url: vehiclesArray[currentVehicle])
+    private func updatePreviewAndNextButton() {
+        nextButton.isEnabled = currentVehicle == vehiclesArray.count - 1 ? false : true
+        previewButton.isEnabled = currentVehicle == 0 ? false : true
+        fetchVehicle(from: vehiclesArray[currentVehicle])
     }
     
     

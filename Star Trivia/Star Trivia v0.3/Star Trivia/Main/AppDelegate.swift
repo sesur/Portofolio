@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        let navigationController = configureNavigationbar()
+        let navigationController = configureNavigationBar()
 
         coordinator = MainCoordinator(navigationController: navigationController)
         coordinator?.start()
@@ -28,7 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
     
-    func configureNavigationbar()-> UINavigationController {
+    func configureNavigationBar()-> UINavigationController {
         let navigationController = UINavigationController()
         navigationController.navigationBar.setBackgroundImage(UIImage(), for: .default)
         navigationController.navigationBar.shadowImage = UIImage()

@@ -23,7 +23,7 @@
 		7D2A353122B778E30010A8B1 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2A353022B778E30010A8B1 /* MainCoordinator.swift */; };
 		7D2DC5E42238BBE40088CBB4 /* PersonAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2DC5E32238BBE40088CBB4 /* PersonAPI.swift */; };
 		7D2DC5E62238C4060088CBB4 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2DC5E52238C4060088CBB4 /* Person.swift */; };
-		7D59440E223B54690007193D /* HomewoldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D59440D223B54690007193D /* HomewoldViewController.swift */; };
+		7D59440E223B54690007193D /* HomeworldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D59440D223B54690007193D /* HomeworldViewController.swift */; };
 		7D594410223B54C90007193D /* StarshipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D59440F223B54C90007193D /* StarshipViewController.swift */; };
 		7D594412223B54D80007193D /* VehicleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D594411223B54D80007193D /* VehicleViewController.swift */; };
 		7D594414223B54F10007193D /* FilmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D594413223B54F10007193D /* FilmViewController.swift */; };
@@ -58,7 +58,7 @@
 		7D2A353022B778E30010A8B1 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		7D2DC5E32238BBE40088CBB4 /* PersonAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonAPI.swift; sourceTree = "<group>"; };
 		7D2DC5E52238C4060088CBB4 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
-		7D59440D223B54690007193D /* HomewoldViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomewoldViewController.swift; sourceTree = "<group>"; };
+		7D59440D223B54690007193D /* HomeworldViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeworldViewController.swift; sourceTree = "<group>"; };
 		7D59440F223B54C90007193D /* StarshipViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarshipViewController.swift; sourceTree = "<group>"; };
 		7D594411223B54D80007193D /* VehicleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleViewController.swift; sourceTree = "<group>"; };
 		7D594413223B54F10007193D /* FilmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmViewController.swift; sourceTree = "<group>"; };
@@ -150,7 +150,7 @@
 			children = (
 				7D1D2F35223640F500998C60 /* HomeController.swift */,
 				7D594411223B54D80007193D /* VehicleViewController.swift */,
-				7D59440D223B54690007193D /* HomewoldViewController.swift */,
+				7D59440D223B54690007193D /* HomeworldViewController.swift */,
 				7D59440F223B54C90007193D /* StarshipViewController.swift */,
 				7D594413223B54F10007193D /* FilmViewController.swift */,
 			);
@@ -401,7 +401,7 @@
 				7DFB818F223A1A8F00B7CFE9 /* FadeButtonAnimation.swift in Sources */,
 				7D1D2F34223640F500998C60 /* AppDelegate.swift in Sources */,
 				7D594416223B848F0007193D /* HomeworldPerson.swift in Sources */,
-				7D59440E223B54690007193D /* HomewoldViewController.swift in Sources */,
+				7D59440E223B54690007193D /* HomeworldViewController.swift in Sources */,
 				7D5944242240A27A0007193D /* FilmAPI.swift in Sources */,
 				7D2DC5E42238BBE40088CBB4 /* PersonAPI.swift in Sources */,
 				7D1D2F522236538900998C60 /* Constants.swift in Sources */,

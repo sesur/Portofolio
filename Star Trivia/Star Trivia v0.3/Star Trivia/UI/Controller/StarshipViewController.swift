@@ -14,15 +14,15 @@ class StarshipViewController: UIViewController, PersonProtocol, Storyboarded {
     
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var model: UILabel!
-    @IBOutlet weak var lenghtLabel: UILabel!
-    @IBOutlet weak var makerLabel: UILabel!
-    @IBOutlet weak var costLabel: UILabel!
-    @IBOutlet weak var speedLabel: UILabel!
-    @IBOutlet weak var crewLabel: UILabel!
-    @IBOutlet weak var passangersLabel: UILabel!
+    @IBOutlet weak var length: UILabel!
+    @IBOutlet weak var maker: UILabel!
+    @IBOutlet weak var cost: UILabel!
+    @IBOutlet weak var speed: UILabel!
+    @IBOutlet weak var crew: UILabel!
+    @IBOutlet weak var passengers: UILabel!
     @IBOutlet weak var spinner: UIActivityIndicatorView!
     
-    @IBOutlet weak var previewButtonLabel: FadeButtonAnimation!
+    @IBOutlet weak var previewLabel: FadeButtonAnimation!
     @IBOutlet weak var nextButtonLabel: FadeButtonAnimation!
     
     
@@ -34,46 +34,45 @@ class StarshipViewController: UIViewController, PersonProtocol, Storyboarded {
     override func viewDidLoad() {
         super.viewDidLoad()
         spinner.startAnimating()
-//        checkFirstStarship()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        checkFirstStarship()
+        getFirstStarShip()
     }
     
-    private func checkFirstStarship() {
-        starshipsArray = person?.starshipUrl ?? []
+    private func getFirstStarShip() {
+        starshipsArray = person?.starshipUrls ?? []
         nextButtonLabel.isEnabled = starshipsArray.count > 1
-        previewButtonLabel.isEnabled = false
+        previewLabel.isEnabled = false
         
-        guard let firstStarship = starshipsArray.first else {return}
-        getStarship(url: firstStarship)
+        guard let firstStarshipUrl = starshipsArray.first else {return}
+        fetchStarshipFrom(firstStarshipUrl)
     }
     
-    private func getStarship(url: String) {
+    private func fetchStarshipFrom(_ url: String) {
         spinner.startAnimating()
         
         api.getStarship(url: url) { (result) in
             switch result {
-            case .success(let starship): self.setupViews(starship: starship)
+            case .success(let starship): self.updateDetailsOf(starship)
             case .failure(let error): print(error.localizedDescription)
             }
         }
     }
     
-    private func setupViews(starship: Starship?) {
+    private func updateDetailsOf(_ starship: Starship?) {
         spinner.stopAnimating()
         
         guard let starship = starship else {return}
         name.text = starship.name
         model.text = starship.model
-        lenghtLabel.text = starship.length
-        makerLabel.text = starship.maker
-        costLabel.text = starship.cost
-        speedLabel.text = starship.speed
-        crewLabel.text = starship.speed
-        passangersLabel.text = starship.passengers
+        length.text = starship.length
+        maker.text = starship.maker
+        cost.text = starship.cost
+        speed.text = starship.speed
+        crew.text = starship.speed
+        passengers.text = starship.passengers
     }
     
     @IBAction func previewButtonPressed(_ sender: Any) {
@@ -87,9 +86,9 @@ class StarshipViewController: UIViewController, PersonProtocol, Storyboarded {
     }
     
     private func setupButtons() {
-        previewButtonLabel.isEnabled = currentStarship == 0 ? false : true
+        previewLabel.isEnabled = currentStarship == 0 ? false : true
         nextButtonLabel.isEnabled = currentStarship == starshipsArray.count - 1 ? false : true
-        getStarship(url: starshipsArray[currentStarship])
+        fetchStarshipFrom(starshipsArray[currentStarship])
         
     }
 }

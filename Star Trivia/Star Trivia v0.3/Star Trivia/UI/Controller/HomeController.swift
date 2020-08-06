@@ -94,7 +94,7 @@ class HomeController: UIViewController, PersonProtocol, Storyboarded {
     
     private func updateButtons(_ person: Person) {
         homeWorldLabel.isEnabled = !person.homeWorld.isEmpty
-        starshipsLabel.isEnabled = !person.starshipUrl.isEmpty
+        starshipsLabel.isEnabled = !person.starshipUrls.isEmpty
         vehiclesLabel.isEnabled = !person.vehicleUrls.isEmpty
         filmsLabel.isEnabled = !person.filmUrls.isEmpty
         
